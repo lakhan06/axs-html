@@ -69,9 +69,10 @@
 .web3 img{
     transition: ease;
     margin: 0 50px;
+    z-index: 5;
 }
 .web3 img:hover{
-    animation: 1s shake;
+    animation: shake 1s;
     animation-iteration-count: infinite;
 }
 
