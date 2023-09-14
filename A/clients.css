@@ -171,3 +171,8 @@ input[type="radio"] {
   filter: drop-shadow(#ffd95a 0px 5px 15px) !important;
   transition: ease-in-out 0.2s !important;
 }
+
+.text p{
+  font-size: 15px;
+  color: rgb(177, 175, 175);
+}

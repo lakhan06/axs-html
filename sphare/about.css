@@ -108,7 +108,7 @@
 }
 
 .content{
-    color: white;
+    color: rgb(174, 174, 174);
     text-align: justify;
     font-family: serif;
     padding: 10px;
@@ -125,6 +125,75 @@
     animation: mymove 360s infinite;
     filter: brightness(1.6);
 }
+.button {
+    color: white;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    width: 340px;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    margin-left: 65px;
+}
+
+.herobutton {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid rgba(215, 114, 198, 0.795);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.button1 {
+  padding: 1.5px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(221, 73, 196, 0.795);
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.button2 {
+  padding: 1.5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(231, 124, 226, 0.976) ;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+}
+
+    .herobutton svg{
+    
+        animation: arrow 2s infinite linear;
+        transition: 2s ease;
+        
+        
+        
+          }
+
+    @keyframes arrow {
+        0%{
+          transform: translateX(0);
+        }
+    
+        50%{
+    
+          transform: translateX(5px);
+        }
+        100%{
+          transform: translateX(0);
+        }
+        
+      }
 
 .links{
     margin-left: 68px;
