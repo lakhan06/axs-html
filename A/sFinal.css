@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: url("./Clients/starSpaceBackground.jpg");
+  background-size: contain;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.singleCard {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 32vw;
+  color: white;
+  top: 25vh;
+  left: 35vw;
+  transform: scale(0.5);
+  opacity: 0;
+  z-index: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.singleCard .photu img {
+  border-radius: 30px;
+  width: 15vw;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.singleCard .text img {
+  width: 15vw;
+  margin-bottom: 20px;
+}
+
+.singleCard .text {
+  width: 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2vw;
+  text-align: center;
+}
+
+.mainLogos {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 500px;
+}
+
+.mainLogos img {
+  cursor: pointer;
+  max-width: 5vw;
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+}
+
+.mainLogos img:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(#ffd95a 0px 5px 15px);
+  opacity: 1;
+  transition: ease-in-out 0.2s;
+}
+
+.mainLogos img.big {
+  max-width: 10vw;
+}
+
+.vLine {
+  width: 2px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.line {
+  display: inline-block;
+  width: 65vw;
+  height: 2px;
+  background-color: white;
+  border-radius: 70px;
+}
+
+.others {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 52vw;
+}
+
+.others img {
+  max-width: 7vw;
+  opacity: 0.5;
+  transition: all ease-in-out 1.2s;
+  margin: 5px 3vw;
+}
+
+.others img.sm {
+  max-width: 4vw;
+}
+
+.others img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+}
+/* 
+#c1:checked ~ .card3,
+#c2:checked ~ .card1,
+#c3:checked ~ .card2 {
+  transform: scale(0.5);
+  opacity: 0;
+  z-index: 0;
+}
+
+#c1:checked ~ .card2,
+#c2:checked ~ .card3,
+#c3:checked ~ .card1 {
+  transform: scale(0.5);
+  opacity: 0;
+  z-index: 0;
+}
+
+#c1:checked ~ .card1,
+#c2:checked ~ .card2,
+#c3:checked ~ .card3 {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#c1:checked ~ #L1,
+#c2:checked ~ #L2,
+#c3:checked ~ #L3 {
+  transform: scale(1.1);
+  filter: drop-shadow(#ffd95a 0px 5px 15px);
+  opacity: 1;
+  transition: ease-in-out 0.2s;
+}
+ */
+
+.up {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.gold {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+  filter: drop-shadow(#ffd95a 0px 5px 15px) !important;
+  transition: ease-in-out 0.2s !important;
+}
