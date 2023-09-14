@@ -9,9 +9,12 @@
 .main {
   width: 100vw;
   height: 100vh;
-  background: url("./Clients/starSpaceBackground.jpg");
-  background-size: contain;
+  background: url("./Clients/1580977.jpg");
+  background-size: cover;
+  background-position: 70%;
   z-index: -1;
+  background-repeat: no-repeat;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +35,7 @@ input[type="radio"] {
   left: 35vw;
   transform: scale(0.5);
   opacity: 0;
-  z-index: 0;
+  z-index: 5;
   transition: ease-in-out 0.5s;
 }
 
@@ -157,6 +160,7 @@ header {
   position: fixed;
   top: 0px;
   background-color: transparent;
+  z-index: 10;
 }
 .navbar {
   width: 92%;
