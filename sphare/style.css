@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#three-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  color: white;
+  z-index: 1;
+}
+
+.content {
+  width: 80vw;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .Title{
+    font-size: 50px;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 40vw;
+
+   } */
+.tagline {
+  font-size: 48px;
+  color: white;
+  text-transform: uppercase;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* margin-bottom: 20px; */
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  width: 80vw;
+  line-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* letter-spacing: 5px; */
+}
+
+.tagline2 {
+  font-size: 80px;
+  color: white;
+  text-transform: uppercase;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  /* margin-bottom: 30px; */
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: downey-light;
+  src: url(./font/Downey-Light.ttf);
+}
+
+.detail {
+  font-size: 14px;
+  color: rgb(214, 212, 212);
+  /* line-height: 30px; */
+  /* font-family: downwy-light; */
+  width: 64vw;
+  /* text-align: justify; */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* letter-spacing: 2px; */
+  word-spacing: 1px;
+  line-height: 25px;
+}
+
+video {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  /* filter: brightness(60%); */
+}
+
+.button {
+  color: white;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  width: 340px;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 3px;
+}
+
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  /* pointer-events: all; */
+}
+
+#sub {
+  font-size: 20px;
+  color: rgb(146, 146, 146);
+  font-family: "Poppins";
+  margin-bottom: 8px;
+}
+
+/* NavBar CSS */
+header {
+  width: 100vw;
+  height: 20vh;
+  position: fixed;
+  top: 0px;
+  background-color: transparent;
+}
+
+.navbar {
+  width: 92%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 90px;
+  filter: brightness(2);
+}
+
+.links-group {
+  display: flex;
+}
+
+header li {
+  list-style: none;
+  padding: 0 15px;
+  transition: 0.2s ease-in;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1.5px;
+
+  font-size: 14px;
+}
+
+li:hover {
+  transform: scale3d(1.1, 1.2, 1.3);
+}

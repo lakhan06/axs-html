@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Home</title>
   <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css” />
   <link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css” />
+  <link rel="stylesheet" href="style.css">
 </head>
+<<<<<<< HEAD
+=======
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
@@ -120,35 +123,63 @@
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
-  }
+    margin-left: 65px;
+}
 
-  .herobutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.herobutton {
     padding: 10px;
     background-color: transparent;
     color: white;
-    border: 1px solid rgba(249, 132, 241, 0.964);
-    border-radius: 50%;
-  }
+    border: 1px solid rgba(215, 114, 198, 0.795);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+}
 
-  .button1 {
-    padding: 1.5px;
-    background-color: transparent;
-    color: white;
-    border: 2px solid rgba(235, 124, 227, 0.795);
-    border-radius: 50%;
-    margin-left: 10px;
-  }
+.button1 {
+  padding: 1.5px;
+  background-color: transparent;
+  color: white;
+  border: 2px solid rgba(221, 73, 196, 0.795);
+  border-radius: 50%;
+  margin-left: 10px;
+  cursor: pointer;
+  z-index: 4;
+}
 
-  .button2 {
-    padding: 1.5px;
-    background-color: transparent;
-    color: white;
-    border: 1px solid #f7aaf3f9;
-    border-radius: 50%;
-  }
+.button2 {
+  padding: 1.5px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid rgba(231, 124, 226, 0.976) ;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 4;
+}
+
+    .herobutton svg{
+    
+        animation: arrow 2s infinite linear;
+        transition: 2s ease;
+        
+        
+        
+          }
+
+    @keyframes arrow {
+        0%{
+          transform: translateX(0);
+        }
+    
+        50%{
+    
+          transform: translateX(5px);
+        }
+        100%{
+          transform: translateX(0);
+        }
+        
+      }
 
   #particles-js {
     position: absolute;
@@ -211,6 +242,7 @@
     transform: scale3d(1.1, 1.2, 1.3);
   }
 </style>
+>>>>>>> 5dfe36f9447b1931cde6bed2657fd89f729f52b2
 
 <body>
   <header>
@@ -255,21 +287,11 @@
     <div class="button">
       Explore our services
 
-      <div class="button1">
-        <div class="button2">
-
-          <button class="herobutton">
-            <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg></div>
-          </button>
-        </div>
-      </div>
-    </div>
+     </div>
   </div>
   <div id="particles-js"></div>
+<<<<<<< HEAD
+=======
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
   <script>
     const threeContainer = document.getElementById('three-container');
@@ -348,8 +370,8 @@
     const animate = () => {
       requestAnimationFrame(animate);
 
-      particleSystem.rotation.x += 0.0008;
-      particleSystem.rotation.y += 0.0008;
+      particleSystem.rotation.x += 0.001;
+      particleSystem.rotation.y += 0.001;
 
       renderer.render(scene, camera);
     };
@@ -468,7 +490,209 @@
       "retina_detect": true
     });
   </script>
+>>>>>>> 5dfe36f9447b1931cde6bed2657fd89f729f52b2
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+  const threeContainer = document.getElementById('three-container');
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
+  const renderer = new THREE.WebGLRenderer({
+    alpha: true,
+  });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  threeContainer.appendChild(renderer.domElement);
+
+  const particleCount = 3000; // Number of particles in the galaxy
+  const particles = new THREE.BufferGeometry();
+
+  const positions = new Float32Array(particleCount * 3);
+  const colors = new Float32Array(particleCount * 3);
+
+  const color = new THREE.Color();
+
+  for (let i = 0; i < particleCount; i++) {
+    const x = (Math.random() - 0.5) * 2000;
+    const y = (Math.random() - 0.5) * 2000;
+    const z = (Math.random() - 0.5) * 2000;
+
+    positions[i * 3] = x;
+    positions[i * 3 + 1] = y;
+    positions[i * 3 + 2] = z;
+
+    const vx = (Math.random() - 0.5) * 1.5;
+    const vy = (Math.random() - 0.5) * 1.5;
+    const vz = (Math.random() - 0.5) * 1.5;
+
+    colors[i * 3] = color.r = Math.random();
+    colors[i * 3 + 1] = color.g = Math.random();
+    colors[i * 3 + 2] = color.b = Math.random();
+
+    const speedFactor = 1.0;
+    positions[i * 3] += vx * speedFactor;
+    positions[i * 3 + 1] += vy * speedFactor;
+    positions[i * 3 + 2] += vz * speedFactor;
+  }
+
+  particles.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  particles.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+
+  const particleMaterial = new THREE.PointsMaterial({
+    size: 1.5,
+
+    map: new THREE.TextureLoader().load('PngItem_1484999.png'),
+  });
+
+  const particleSystem = new THREE.Points(particles, particleMaterial);
+  scene.add(particleSystem);
+
+  const mouse = new THREE.Vector2();
+  const cameraStartPosition = camera.position.clone();
+
+  window.addEventListener('mousemove', (event) => {
+    mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+    mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+    const cameraMoveSpeed = 0.5;
+    camera.position.x = cameraStartPosition.x + mouse.x * cameraMoveSpeed;
+    camera.position.y = cameraStartPosition.y + mouse.y * cameraMoveSpeed;
+
+    camera.lookAt(scene.position);
+  });
+
+  camera.position.z = 5;
+
+  const animate = () => {
+    requestAnimationFrame(animate);
+
+    particleSystem.rotation.x += 0.0008;
+    particleSystem.rotation.y += 0.0008;
+
+    renderer.render(scene, camera);
+  };
+
+  animate();
+
+  // Particle Library code...................................................................................................................................................................................................
+
+  particlesJS('particles-js', {
+    "particles": {
+      "number": {
+        "value": 200,
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": {
+        "value": "#ec6fe6"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#7091F5"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 4,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#FFFFFF",
+        "opacity": 0.4,
+        "width": 0.8
+      },
+      "move": {
+        "enable": true,
+        "speed": 10,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 200,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
 
 </html>
