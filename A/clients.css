@@ -230,3 +230,17 @@ li:hover {
   transition: ease-in-out 0.2s;
 }
  */
+
+.up {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 0;
+  transition: ease-in-out 0.5s;
+}
+
+.gold {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+  filter: drop-shadow(#ffd95a 0px 5px 15px) !important;
+  transition: ease-in-out 0.2s !important;
+}
