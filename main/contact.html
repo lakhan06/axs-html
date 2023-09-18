@@ -14,6 +14,19 @@
     
     <title>contact</title>
 </head>
+<style>
+    .firefly::before {
+  background: rgb(72, 121, 227);
+  opacity: 0.4;
+  animation: drift ease alternate infinite;
+}
+.firefly::after {
+  background: rgb(72, 121, 227);
+  opacity: 0;
+  box-shadow: 0 0 0vw 0vw rgb(72, 121, 227);
+  animation: drift ease alternate infinite, flash ease infinite;
+}
+</style>
 <body>
     <header>
         <nav class='navbar'>

@@ -382,14 +382,4 @@ label i{
 }
 
 /* firefly */
-.firefly::before {
-  background: rgb(58, 213, 245);
-  opacity: 0.4;
-  animation: drift ease alternate infinite;
-}
-.firefly::after {
-  background: rgb(58, 213, 245);
-  opacity: 0;
-  box-shadow: 0 0 0vw 0vw rgb(58, 213, 245);
-  animation: drift ease alternate infinite, flash ease infinite;
-}
+
