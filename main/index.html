@@ -114,7 +114,7 @@
     const particleMaterial = new THREE.PointsMaterial({
       size: 1.5,
 
-      // map: new THREE.TextureLoader().load('/images/PngItem_1484999.png'),
+      map: new THREE.TextureLoader().load('images/PngItem_1484999.png'),
     });
 
     const particleSystem = new THREE.Points(particles, particleMaterial);
@@ -259,6 +259,20 @@
       "retina_detect": true
     });
   </script>
+   <audio  id="volume" autoplay loop  style="z-index: 99999;">
+  
+    <source src="wandering-6394.mp3" type="audio/mpeg">
+  
+  Your browser does not support the audio element.
+  
+  </audio>
+  
+  
+
+    <script>
+      let vol= document.getElementById('volume')
+     vol.volume=0.5;
+    </script> 
  
 </body>
 

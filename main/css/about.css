@@ -13167,32 +13167,32 @@ li a{
 
 @font-face {
     font-family: downey-light;
-    src: url(./font/Downey-Light.ttf);
+    src: url(/main/font/Downey-Light.ttf);
 }
 
 @font-face {
     font-family: downey-black;
-    src: url(./font/Downey-Black.ttf);
+    src: url(/main/font/Downey-Black.ttf);
 }
 
 @font-face {
     font-family: downey-regular;
-    src: url(./font/Downey-Regular.ttf);
+    src: url(/main/font/Downey-Regular.ttf);
 }
 
 @font-face {
     font-family: downey-o-bold;
-    src: url(./font/DowneyOutline-Bold.ttf);
+    src: url(/main/font/DowneyOutline-Bold.ttf);
 }
 
 @font-face {
     font-family: downey-o-light;
-    src: url(./font/DowneyOutline-Light.ttf);
+    src: url(/main/font/DowneyOutline-Light.ttf);
 }
 
 @font-face {
     font-family: downey-o-regular;
-    src: url(./font/DowneyOutline-Regular.ttf);
+    src: url(/main/font/DowneyOutline-Regular.ttf);
 }
 
 body{
