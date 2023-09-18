@@ -26,6 +26,16 @@
   box-shadow: 0 0 0vw 0vw rgb(72, 121, 227);
   animation: drift ease alternate infinite, flash ease infinite;
 }
+@keyframes flash {
+  0%, 30%, 100% {
+    opacity: 0;
+    box-shadow: 0 0 0vw 0vw rgb(72, 121, 227);
+  }
+  5% {
+    opacity: 1;
+    box-shadow: 0 0 2vw 0.4vw rgb(72, 121, 227);
+  }
+}
 </style>
 <body>
     <header>
