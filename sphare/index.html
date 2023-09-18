@@ -120,6 +120,7 @@
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 3px;
+    z-index: 10;
   }
 
   .herobutton {
@@ -131,6 +132,8 @@
     color: white;
     border: 1px solid rgba(249, 132, 241, 0.964);
     border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
   }
 
   .button1 {
@@ -140,6 +143,8 @@
     border: 2px solid rgba(235, 124, 227, 0.795);
     border-radius: 50%;
     margin-left: 10px;
+    z-index: 10;
+    cursor: pointer;
   }
 
   .button2 {
@@ -148,6 +153,8 @@
     color: white;
     border: 1px solid #f7aaf3f9;
     border-radius: 50%;
+    z-index: 10;
+    cursor: pointer;
   }
 
   #particles-js {
@@ -173,6 +180,7 @@
     position: fixed;
     top: 0px;
     background-color: transparent;
+    z-index: 10;
   }
 
   .navbar {
@@ -215,13 +223,13 @@
 <body>
   <header>
     <nav class='navbar'>
-      <img src="./axs.png" alt="img" />
+      <a href="index.html"><img src="axs.png" alt="img" /></a>
       <ul class='links-group'>
-        <li><a href="/">HOME</a></li>
-        <li><a href="/">ABOUT</a></li>
-        <li><a href="/">CLIENTS</a></li>
-        <li><a href="/">CONTACT US</a></li>
-        <li><a href="/">SERVICES</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="/A/clients.html">CLIENTS</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+        <li><a href="Services3.html">SERVICES</a></li>
       </ul>
     </nav>
   </header>
@@ -251,7 +259,7 @@
     <div class="button">
       Explore our services
 
-      <div class="button1">
+      <a href="Services3.html"><div class="button1">
         <div class="button2">
 
           <button class="herobutton">
@@ -262,7 +270,7 @@
               </svg></div>
           </button>
         </div>
-      </div>
+      </div></a>
     </div>
   </div>
   <div id="particles-js"></div>
@@ -476,7 +484,7 @@
 
     <script>
       let vol= document.getElementById('volume')
-     vol.volume=1;
+     vol.volume=0.5;
     </script> 
 </body>
 

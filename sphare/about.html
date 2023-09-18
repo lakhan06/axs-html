@@ -8,6 +8,19 @@
 </head>
 <link rel="stylesheet" href="about.css">
 <body>
+  <header>
+    <nav class='navbar'>
+      <a href="index.html"><img src="axs.png" alt="img" /></a>
+      <ul class='links-group'>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="/A/clients.html">CLIENTS</a></li>
+        <li><a href="Contact.html">CONTACT US</a></li>
+        <li><a href="Services3.html">SERVICES</a></li>
+      </ul>
+    </nav>
+  </header>
+
   
 <!-- Quantity should be the same in Sass-->
 <div class="firefly"></div>
@@ -184,13 +197,13 @@
                   <div class="button1">
                     <div class="button2">
             
-                      <button class="herobutton">
+                      <a href="vision.html"><button class="herobutton">
                         <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-arrow-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                               d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
                           </svg></div>
-                      </button>
+                      </button></a>
                     </div>
                   </div>
                 </div>
@@ -277,6 +290,7 @@
   
           document.addEventListener('mousemove', (event) => {
               if (isDragging) {
+                
                   const deltaX = event.clientX - previousMousePosition.x;
                   const deltaY = event.clientY - previousMousePosition.y;
   
@@ -299,6 +313,20 @@
           animate();
           
       </script>
+        <audio  id="volume" autoplay loop  style="z-index: 99999;">
+  
+    <source src="wandering-6394.mp3" type="audio/mpeg">
+  
+  Your browser does not support the audio element.
+  
+  </audio>
+  
+  
+
+    <script>
+      let vol= document.getElementById('volume')
+     vol.volume=0.5;
+    </script> 
       </div>
     
 </body>
