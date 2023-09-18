@@ -85,7 +85,7 @@ header li:hover {
   }
 }
 body {
-  background: url(space.jpg);
+  background: url(/main/images/space.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
@@ -94,6 +94,7 @@ body {
   -ms-user-select: none;
   user-select: none;
   color: white  !important;
+
 }
 body #scene {
   display: flex;
@@ -110,6 +111,7 @@ body #scene {
   background-color: transparent;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
+  
 }
 body #scene #left-zone {
   background: transparent;
@@ -146,7 +148,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
   opacity: 0.75;
   cursor: pointer;
 }
-/* body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
+body #scene #left-zone .list li.item input[type=radio] ~ label.label_strawberry:before {
   content: " ";
   display: block;
   position: absolute;
@@ -157,7 +159,7 @@ body #scene #left-zone .list li.item input[type=radio] ~ label:hover {
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
-} */
+}
 body #scene #left-zone .list li.item input[type=radio] ~ label.label_banana:before {
   content: " ";
   display: block;
@@ -341,7 +343,7 @@ label i{
 .large-header {
   position: relative;
   width: 100%;
-  background: #333;
+  /* background: #333; */
   overflow: hidden;
   background-size: cover;
   background-position: center center;
@@ -349,9 +351,7 @@ label i{
   height: 100vh;
 }
 
-#large-header {
-  background-image: url(space.jpg);
-}
+
 
 .main-title {
   position: absolute;
