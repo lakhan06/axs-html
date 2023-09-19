@@ -1,3 +1,5 @@
+
+
 .about-us{
     background: url('../images/Clients/starSpaceBackground.jpg');
     background-repeat: no-repeat;
@@ -9,6 +11,7 @@
     justify-content: center;
     overflow:hidden;
     position: relative;
+    font-family: "Poppins", sans-serif;
     /* color: #1993c7; */
 }
  /* NavBar CSS */
@@ -19,6 +22,7 @@
   top: 0px;
   background-color: transparent;
   z-index: 10;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {

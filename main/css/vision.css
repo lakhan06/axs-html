@@ -15,6 +15,7 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
     overflow: hidden;
+    
         
 }
 
@@ -235,6 +236,7 @@ header {
     top: 0px;
     background-color: transparent;
     z-index: 10;
+    font-family: "Poppins", sans-serif;
   }
   .navbar {
     width: 92%;
