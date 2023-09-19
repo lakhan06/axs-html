@@ -14,9 +14,7 @@
     font-family: "Poppins", sans-serif;
     /* color: #1993c7; */
 }
-.heading{
-  font-family: "Poppins", sans-serif;
-}
+
  /* NavBar CSS */
  header {
   width: 100vw;
@@ -12838,7 +12836,7 @@ li:hover {
 }
 .heading{
     color: white;
-    font-family: downey-regular;
+    font-family: "Poppins", sans-serif;
     font-size: 56px;
     margin-left: 70px;
     line-height: 40px;
