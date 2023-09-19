@@ -12958,28 +12958,22 @@ li:hover {
     color: white;
 }
 
-@media(max-width: 1920){
-  .three-container{
-    position: static;
-  }
-}
 
-@media(max-width: 1280px){
+
+/* @media(max-width: 1280px){
     .three-container{
-      position: absolute;
-      right: 100px;
+      margin-right: 200px;
     }
 }
 
 @media(max-width: 1024px){
   .three-container{
-    position: absolute;
-    right: 200px;
+    margin-right: 100px;
   }
   .heading{
     font-size: 40px;
   }
-}
+} */
 
 @media (max-width: 920px) {
     .about-us {
