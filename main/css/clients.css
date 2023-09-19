@@ -12,7 +12,7 @@
  
   background: url("/main/images/space.jpg");
   background-size: cover;
-  background-position: 70%;
+  /* background-position: 70%; */
   z-index:-1;
   background-repeat: no-repeat;
   
