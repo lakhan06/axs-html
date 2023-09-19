@@ -10,9 +10,9 @@
   width: 100vw;
   height: 100vh;
  
-  background: url("../images/1580977.jpg");
+  background: url("../images/Clients/1580977.jpg");
   background-size: cover;
-  background-position: 70%;
+  /* background-position: 70%; */
   /* z-index:-1; */
   background-repeat: no-repeat;
   
