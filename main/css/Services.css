@@ -85,7 +85,7 @@ header li:hover {
   }
 }
 body {
-  background: url(/main/images/space.jpg);
+  background: url("../images/Clients/starSpaceBackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
