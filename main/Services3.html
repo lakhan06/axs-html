@@ -12,6 +12,7 @@
     />
 <link rel="stylesheet" href="css/Services.css">
 <link rel="stylesheet" href="css/firefly.css">
+<link rel="stylesheet" href="css/revealEffect.css">
 
 <style>
     .firefly::before {
@@ -263,7 +264,7 @@
     
   </body>
  
-  <script src=" https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
+  <!-- <script src=" https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/EasePack.min.js"></script>
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/TweenLite.min.js"></script>
   <script src="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/js/rAF.js"></script>
   <script>
@@ -452,7 +453,7 @@ function getDistance(p1, p2) {
 }
 
 })();
-  </script>
+  </script> -->
     <audio  id="volume" autoplay loop  style="z-index: 99999;">
   
         <source src="wandering-6394.mp3" type="audio/mpeg">
@@ -467,5 +468,9 @@ function getDistance(p1, p2) {
           let vol= document.getElementById('volume')
          vol.volume=0.5;
         </script> 
+        <canvas id="reveal-effect"></canvas>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="js/boxReveal.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
 </html>
