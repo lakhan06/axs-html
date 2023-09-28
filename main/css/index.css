@@ -104,6 +104,15 @@ video {
 }
 
 
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+  
+}
 .button {
 color: white;
 display: flex;
@@ -120,8 +129,8 @@ z-index: 10;
 }
 
 .herobutton {
-  width:43px;
-  height: 43px;
+  width:40px;
+  height: 40px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -144,9 +153,9 @@ filter: brightness(4);
 
 .button1 {
  
-  width:51px;
-  height: 51px;
-padding: 0.1px;
+  width:54px;
+  height: 54px;
+padding: 4px;
 background-color: transparent;
 color: white;
 border: 2px solid #E500E5;
