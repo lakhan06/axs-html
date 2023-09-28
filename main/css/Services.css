@@ -1,5 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+video {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  /* filter: brightness(60%); */
+}
 header {
   width: 100vw;
   height: 20vh;
@@ -9,6 +25,7 @@ header {
   z-index: 2;
   font-family: "Poppins", sans-serif;
 }
+
 
 .navbar {
   width: 92%;
@@ -86,7 +103,7 @@ header li:hover {
   }
 }
 body {
-  background: url("../images/Clients/starSpaceBackground.jpg");
+  /* background: url("../images/Clients/starSpaceBackground.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Poppins', sans-serif;
@@ -230,22 +247,22 @@ body #scene #left-zone .list li.item input[type=radio] ~ .content {
 }
 
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
-  color: #6fd9ee;
+  color: #8327C4;
 }
 
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
-  color: #6fd9ee;
+  color: #8327C4;
 }
 
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
-  color: #6fd9ee;
+  color: #8327C4;
 }
 
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
-  color: #6fd9ee;
+  color: #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content.content_tech h1 {
-  color: #6fd9ee;
+  color: #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
   text-transform: uppercase;
@@ -260,24 +277,24 @@ body #scene #left-zone .list li.item input[type=radio]:checked ~ label {
           animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
-  color: #6fd9ee;
-  border-right: solid 4px #6fd9ee;
+  color: #8327C4;
+  border-right: solid 4px #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
-  color: #6fd9ee;
-  border-right: solid 4px #6fd9ee;
+  color: #8327C4;
+  border-right: solid 4px #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
-  color: #6fd9ee;
-  border-right: solid 4px #6fd9ee;
+  color: #8327C4;
+  border-right: solid 4px #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
-  color: #6fd9ee;
-  border-right: solid 4px #6fd9ee;
+  color: #8327C4;
+  border-right: solid 4px #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_tech {
-  color: #6fd9ee;
-  border-right: solid 4px #6fd9ee;
+  color: #8327C4;
+  border-right: solid 4px #8327C4;
 }
 body #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
   -webkit-animation-duration: 0.75s;
@@ -311,7 +328,7 @@ body #scene #right-zone {
   /* color: rgb(109, 209, 220); */
   /* animation: icon 2s infinite linear; */
   transition: all 2s ;
-  color: #6fd9ee;
+  color: #8327C4;
 }
 
 label i{
@@ -321,19 +338,19 @@ label i{
 }
 
 /* .content_strawberry i{
-    color: #6fd9ee;
+    color: #8327C4;
 }
 .content_banana i{
-    color: #6fd9ee;
+    color: #8327C4;
 }
 .content_apple i{
-    color: #6fd9ee;
+    color: #8327C4;
 }
 .content.content_orange i{
-    color: #6fd9ee;
+    color: #8327C4;
 }
 .content.content_tech i{
-    color: #6fd9ee;
+    color: #8327C4;
 }
  */
 

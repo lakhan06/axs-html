@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/clients.css">
     <link rel="stylesheet" href="./css/firefly.css">
-    <link rel="stylesheet" href="css/revealEffect.css">
+
 </head>
 
 <body>
@@ -161,7 +161,7 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
     <div class="firefly"></div>
-    <header>
+    <!-- <header>
         <nav class='navbar'>
           <a href="index.html"><img src="images/axs.png" alt="img" /></a>
           <ul class='links-group'>
@@ -173,7 +173,10 @@
             <li><a href="team.html">TEAM</a></li>
           </ul>
         </nav>
-      </header>
+      </header> -->
+      <video id="vid" muted autoplay plays-inline loop>
+        <source src="./images/video (2160p).mp4" type="video/mp4">
+      </video>
     <div class="overlay"></div>
     <div class="main">
         <input type="radio" name="slider" id="c1">
@@ -308,10 +311,8 @@
       let vol= document.getElementById('volume')
      vol.volume=0.5;
     </script> 
-    <canvas id="reveal-effect"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-   <script src="js/boxReveal.js"></script>
+
+   
 
 
 </html>

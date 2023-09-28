@@ -12,33 +12,11 @@
     />
 <link rel="stylesheet" href="css/Services.css">
 <link rel="stylesheet" href="css/firefly.css">
-<link rel="stylesheet" href="css/revealEffect.css">
+<!-- <link rel="stylesheet" href="css/revealEffect.css"> -->
 
-<style>
-    .firefly::before {
-  background: rgb(58, 213, 245) ;
-  opacity: 0.4;
-  animation: drift ease alternate infinite;
-}
-.firefly::after {
-  background: rgb(58, 213, 245) ;
-  opacity: 0;
-  box-shadow: 0 0 0vw 0vw rgb(58, 213, 245);
-  animation: drift ease alternate infinite, flash ease infinite;
-}
-@keyframes flash {
-  0%, 30%, 100% {
-    opacity: 0;
-    box-shadow: 0 0 0vw 0vw rgb(58, 213, 245);
-  }
-  5% {
-    opacity: 1;
-    box-shadow: 0 0 2vw 0.4vw rgb(58, 213, 245);
-  }
-}
-</style>
+
 <body>
-  <header>
+  <!-- <header>
     <nav class='navbar'>
       <a href="index.html"><img src="images/axs.png" alt="img" /></a>
       <ul class='links-group'>
@@ -50,7 +28,10 @@
         <li><a href="team.html">TEAM</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
+  <video id="vid" muted autoplay plays-inline loop>
+    <source src="./images/video (2160p).mp4" type="video/mp4">
+  </video>
       <div class="firefly"></div>
     <div class="firefly"></div>
     <div class="firefly"></div>
@@ -205,7 +186,7 @@
     
     
     
-    
+    <div class="overlay"></div>
     
   <div id="large-header" class="large-header">
         <canvas id="demo-canvas"></canvas>
@@ -468,9 +449,6 @@ function getDistance(p1, p2) {
           let vol= document.getElementById('volume')
          vol.volume=0.5;
         </script> 
-        <canvas id="reveal-effect"></canvas>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-        <script src="js/boxReveal.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    
 
 </html>

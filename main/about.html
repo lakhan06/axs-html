@@ -7,7 +7,13 @@
 
 </head>
 <link rel="stylesheet" href="./css/about.css">
-<link rel="stylesheet" href="css/revealEffect.css">
+<link rel="stylesheet" href="css/firefly.css">
+<link rel="stylesheet" href="css/mainreveal.css">
+<script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+</script>
+<!-- <link rel="stylesheet" href="css/revealEffect.css"> -->
 <body>
   <header>
     <nav class='navbar'>
@@ -22,6 +28,9 @@
       </ul>
     </nav>
   </header>
+  <video id="vid" muted autoplay plays-inline loop>
+    <source src="./images/video (2160p).mp4" type="video/mp4">
+  </video>
   
 <!-- Quantity should be the same in Sass-->
 <div class="firefly"></div>
@@ -174,7 +183,8 @@
 <div class="firefly"></div>
 <div class="firefly"></div>
 <div class="firefly"></div>
-    <div class="about-us">
+<div class="overlay"></div>
+    <div class="about-us transition-fade" >
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -211,13 +221,7 @@
             </div>
           </div>
        
-        <!-- <div class="web3">
-          <img src="./ethereum.svg"  alt="" />
-          <img src="./polygon.svg"  alt="" />
-          <img src="./metamask.svg"  alt="" />
-          <img src="./bitcoin.svg"  alt="" />
-          <img src="./chainlink.svg"  alt="" />
-        </div> -->
+     
         
         <div id="three-container"></div>
       </div>
@@ -237,7 +241,7 @@
 
   
           const particleMaterial = new THREE.PointsMaterial({
-              color: "#fefae0",
+              color: "#ffffff",
               size: 0.05,
               transparent: true,
               alphaTest: 0.5,
@@ -325,9 +329,6 @@
      vol.volume=0.5;
     </script> 
 
-    <canvas id="reveal-effect"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-   <script src="js/boxReveal.js"></script>
-    
+   
 </body>
 </html>

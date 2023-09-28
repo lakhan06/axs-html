@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,900");
 *, :after, :before {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-}
+
 
 body {
   font-family: "Lato", sans-serif;
@@ -17,6 +17,16 @@ body {
     overflow: hidden;
     
         
+}
+
+video {
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  /* filter: brightness(60%); */
 }
 
 strong {
