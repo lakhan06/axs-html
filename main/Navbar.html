@@ -11,12 +11,19 @@ rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
 />
 <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
     html, body, canvas {
   display: block;
   width: 100%;
   height: 100%;
   margin: 0;
-  position: fixed;
+  position: relative;
   /* background: black; */
 }
 video {
@@ -39,15 +46,15 @@ video {
 .back{
     z-index: -1;
 }
-.buttons{
+/* .buttons{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+ 
   bottom: 10%;
   left: 35%;
   
-}
+} */
 .button {
 color: white;
 display: flex;
@@ -64,8 +71,8 @@ z-index: 10;
 }
 
 .herobutton {
-  width:43px;
-  height: 43px;
+  width:50px;
+  height: 50px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -123,6 +130,39 @@ border: 0.3px solid #f3bcf0f9;
 border-radius: 50%;
 z-index: 1;
 cursor: pointer;
+}
+
+
+.home{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+.abt{
+    position: absolute;
+    top: 37%;
+    left: 35%;
+}
+.client{
+    position: absolute;
+    top: 57%;
+    left: 35%;
+}
+
+.service{
+    position: absolute;
+    top: 67%;
+    left: 45%;
+}
+.team{
+    position: absolute;
+    top: 57%;
+    left: 55%;
+}
+.contact{
+    position: absolute;
+    top: 37%;
+    left: 55%;
 }
 
 
@@ -287,7 +327,7 @@ cursor: pointer;
 
     <div class="buttons">
 
-        <a href="index.html">
+        <a href="index.html" class="home">
             <!-- <div class="button1"> -->
                 <!-- <div class="button2"> -->
                     
@@ -297,7 +337,7 @@ cursor: pointer;
                 <!-- </div> -->
             <!-- </div> -->
         </a>
-        <a href="about.html">
+        <a href="about.html" class="abt">
           <!-- <div class="button1"> -->
                 <!-- <div class="button2"> -->
                     
@@ -307,7 +347,7 @@ cursor: pointer;
                 <!-- </div> -->
             <!-- </div> -->
         </a>
-        <a href="clients.html">
+        <a href="clients.html" class="client">
           <!-- <div class="button1"> -->
             <!-- <div class="button2"> -->
               
@@ -317,7 +357,7 @@ cursor: pointer;
             <!-- </div> -->
           <!-- </div> -->
         </a>
-        <a href="Services3.html">
+        <a href="Services3.html" class="service">
           <!-- <div class="button1"> -->
             <!-- <div class="button2"> -->
               
@@ -327,7 +367,7 @@ cursor: pointer;
             <!-- </div> -->
           <!-- </div> -->
         </a>
-        <a href="team.html">
+        <a href="team.html" class="team">
             <!-- <div class="button1"> -->
                 <!-- <div class="button2"> -->
                     
@@ -337,7 +377,7 @@ cursor: pointer;
                 <!-- </div> -->
             <!-- </div> -->
         </a>
-        <a href="contact.html">
+        <a href="contact.html" class="contact">
             <!-- <div class="button1"> -->
                 <!-- <div class="button2"> -->
                     
