@@ -244,6 +244,7 @@ border: 0.2px solid rgba(215, 163, 212, 0.964);
 border-radius: 50%;
 z-index: 1;
 cursor: pointer;
+margin: 20px;
 }
 
 .herobutton i{

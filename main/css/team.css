@@ -84,6 +84,7 @@ li:hover {
   margin-bottom: 70px;
   font-family: 'Black Ops One', cursive;
   font-weight: 100;
+  z-index: 2;
 }
 
 .main h2 {
@@ -301,4 +302,77 @@ perspective: 800px;
   transform: scale(1) !important;
   opacity: 1 !important;
   transition: all ease-in-out 0.2s;
+}
+
+
+/* navbar */
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 33%;
+  
+}
+
+
+.herobutton {
+  width:43px;
+  height: 43px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+background-color: transparent;
+color: white;
+border: 0.2px solid rgba(215, 163, 212, 0.964);
+border-radius: 50%;
+z-index: 1;
+cursor: pointer;
+margin: 20px;
+}
+
+.herobutton i{
+font-size: 20px;
+}
+.herobutton img{
+width: 40px;
+filter: brightness(4);
+}
+
+.button1 {
+ 
+  width:54px;
+  height: 54px;
+padding: 4px;
+background-color: transparent;
+color: white;
+border: 2px solid #E500E5;
+border-radius: 50%;
+margin-left: 10px;
+z-index: 1;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background-color: white; */
+margin: 20px;
+}
+
+
+.button2 {
+  display: flex;
+justify-content: center;
+align-items: center;
+  width:47px;
+  height: 47px;
+padding: 2px;
+background-color: transparent;
+color: white;
+border: 0.3px solid #f3bcf0f9;
+border-radius: 50%;
+z-index: 1;
+cursor: pointer;
 }
