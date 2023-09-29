@@ -6,6 +6,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .about-us{
     /* background: url('../images/Clients/starSpaceBackground.jpg');
     background-repeat: no-repeat;
@@ -19,6 +21,7 @@
     overflow:hidden;
     position: relative;
     font-family: "Poppins", sans-serif;
+    z-index: 2;
     /* color: #1993c7; */
 }
 video {
@@ -232,7 +235,7 @@ li:hover {
 }
 
 
-.herobutton {
+.aboutbutton {
   width:43px;
   height: 43px;
 display: flex;
@@ -248,14 +251,14 @@ cursor: pointer;
 margin: 20px;
 }
 
-.herobutton:hover{
+.aboutbutton:hover{
   transform: scale(1.2);
 }
 
-.herobutton i{
+.aboutbutton i{
 font-size: 20px;
 }
-.herobutton img{
+.aboutbutton img{
 width: 40px;
 filter: brightness(4);
 }

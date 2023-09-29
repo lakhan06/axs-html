@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+/>
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- <link rel="stylesheet" href="css/revealEffect.css"> -->
+  <!-- <link rel="stylesheet" href="css/backgound.css"> -->
+  <link rel="stylesheet" href="css/firefly.css">
+  <!-- <link rel="stylesheet" href="css/mainreveal.css"> -->
+  <link rel="stylesheet" href="css/Galaxy.css ">
+  <!-- <script src="https://unpkg.com/swup@4"></script>
+<script>
+  const swup = new Swup();
+</script> -->
+</head>
+
+<body>
+  <!-- <header>
+    <nav class='navbar'>
+      <a href="index.html"><img src="images/axs.png" alt="img" /></a>
+      <ul class='links-group'>
+        <li><a href="/main/index.html">HOME</a></li>
+        <li><a href="/main/about.html">ABOUT</a></li>
+        <li><a href="clients.html">CLIENTS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+        <li><a href="Services3.html">SERVICES</a></li>
+        <li><a href="team.html">TEAM</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+
+  <div id="three-container"></div>
+  <div class="overlay"></div>
+  <video id="vid" muted autoplay plays-inline loop>
+    <source src="./images/video (2160p).mp4" type="video/mp4">
+  </video>
+<div class="Hero-section">
+
+  <div class="content">
+    <div class="tagline"> Navigating the Web3 Frontier </div>
+    <span id="sub"> Guided by Your Success</span>
+    <!-- <div class="tagline2"></div> -->
+    <div class="detail">
+      From ideation to creation and post-launch support, we provide end-to-end assistance. Our goal is to establish AXS
+      as a specialized and innovative agency, acknowledged by our competitors. With a robust network and exceptional
+      communication skills, we strive to be seen as genuine, client-oriented consultants who prioritize our clients'
+      best interests above all else.
+    </div>
+    
+    <div class="button">
+      Explore the Future
+      
+   
+        <div class="button1 " onclick="galaxyVisible()">
+          <div class="button2">
+            
+            <button class="homebutton">
+              <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg></div>
+            </button>
+          </div>
+        </div>
+
+      
+    </div>
+    
+    <div id="particles-js"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  
+
+
+      
+      <script type="module" src="js/Galxy.js"></script>
+      <script src="Js/Particle.js"></script>
+      
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <div class="buttons">
+
+      <div  class="home transform-up-buttons" onclick="galaxyhide()">
+          <!-- <div class="button1"> -->
+              <!-- <div class="button2"> -->
+                  
+                  <button class="herobutton">
+                      <i class="bi bi-house-fill"></i>
+                  </button>
+              <!-- </div> -->
+          <!-- </div> -->
+      </div>
+      <a href="about.html" class="abt transform-up-buttons">
+        <!-- <div class="button1"> -->
+              <!-- <div class="button2"> -->
+                  
+                  <button class="herobutton">
+                      <img src="./images/axs.png" alt="">
+                  </button>
+              <!-- </div> -->
+          <!-- </div> -->
+      </a>
+      <a href="clients.html" class="client transform-up-buttons">
+        <!-- <div class="button1"> -->
+          <!-- <div class="button2"> -->
+            
+            <button class="herobutton">
+              <i class="bi bi-person-check"></i>
+            </button>
+          <!-- </div> -->
+        <!-- </div> -->
+      </a>
+      <a href="Services3.html" class="service transform-up-buttons">
+        <!-- <div class="button1"> -->
+          <!-- <div class="button2"> -->
+            
+            <button class="herobutton">
+              <i class="bi bi-sliders"></i>
+            </button>
+          <!-- </div> -->
+        <!-- </div> -->
+      </a>
+      <a href="team.html" class="team transform-up-buttons">
+          <!-- <div class="button1"> -->
+              <!-- <div class="button2"> -->
+                  
+                  <button class="herobutton">
+                      <i class="bi bi-people-fill"></i>
+                  </button>
+              <!-- </div> -->
+          <!-- </div> -->
+      </a>
+      <a href="contact.html" class="contact transform-up-buttons">
+          <!-- <div class="button1"> -->
+              <!-- <div class="button2"> -->
+                  
+                  <button class="herobutton">
+                      <i class="bi bi-telephone-fill"></i>
+                  </button>
+              <!-- </div> -->
+          <!-- </div> -->
+      </a>
+    </div>
+<!-- audio part -->
+   <audio  id="volume" autoplay loop  style="z-index: 99999;">
+  
+    <source src="wandering-6394.mp3" type="audio/mpeg">
+    
+    
+  </audio>
+  
+  
+
+    <script>
+      let vol= document.getElementById('volume')
+     vol.volume=0.5;
+     
+     </script>
+
+     <script src="Js/Home-to-Nav.js"></script>
+    
+    
+  </body>
+  
+</html>
