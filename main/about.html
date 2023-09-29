@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="./css/about.css">
 <link rel="stylesheet" href="css/firefly.css">
 <link rel="stylesheet" href="css/mainreveal.css">
+<link rel="stylesheet" href="css/Galxy.css">
 <link
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -227,7 +228,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
        
      
         
-          <div id="three-container"></div>
+          <!-- <div id="three-container"></div> -->
         </div>
       <div class="buttons">
 
@@ -293,7 +294,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
         </a>
       </div>
       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
       <script>
         const threeContainer = document.getElementById('three-container');
           const scene = new THREE.Scene();
@@ -383,19 +384,21 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
   
           animate();
           
-      </script>
+      </script> -->
         <audio  id="volume" autoplay loop  style="z-index: 99999;">
   
     <source src="wandering-6394.mp3" type="audio/mpeg">
   
   </audio>
   
-  
+  <canvas id="canvas"></canvas>
 
     <script>
       let vol= document.getElementById('volume')
      vol.volume=0.5;
     </script> 
+
+    <script  type="module" src="js/Navbar.js"></script>
 
    
 </body>

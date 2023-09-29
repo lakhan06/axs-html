@@ -10,6 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/team.css">
     <link rel="stylesheet" href="./css/firefly.css">
+    <link rel="stylesheet" href="css/Galxy.css">
     <link
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -424,24 +425,27 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
             <!-- </div> -->
         </a>
       </div>
+      <canvas id="canvas"></canvas>
 
+      <script src="./js/team.js"></script>
+      <audio  id="volume" autoplay loop  style="z-index: 99999;">
+        
+          <source src="wandering-6394.mp3" type="audio/mpeg">
+        
+        Your browser does not support the audio element.
+        
+        </audio>
+        
+        
+      
+          <script>
+            let vol= document.getElementById('volume')
+           vol.volume=0.5;
+          </script> 
+      
+          <script type="module" src="js/Navbar.js"></script>
 </body>
 
-<script src="./js/team.js"></script>
-<audio  id="volume" autoplay loop  style="z-index: 99999;">
-  
-    <source src="wandering-6394.mp3" type="audio/mpeg">
-  
-  Your browser does not support the audio element.
-  
-  </audio>
-  
-  
-
-    <script>
-      let vol= document.getElementById('volume')
-     vol.volume=0.5;
-    </script> 
     
 
 

@@ -8,11 +8,12 @@
 
 video {
   position: absolute;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1;
+  z-index: -10;
   /* filter: brightness(60%); */
 }
 .main {
@@ -29,6 +30,7 @@ video {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 input[type="radio"] {
@@ -88,6 +90,7 @@ input[type="radio"] {
   align-items: center;
   margin-bottom: 20px;
   margin-top: 400px;
+  z-index: 2;
 }
 
 .mainLogos img {
@@ -130,6 +133,7 @@ input[type="radio"] {
   flex-wrap: wrap;
   align-items: center;
   width: 52vw;
+  z-index: 2;
 }
 
 .others img {
