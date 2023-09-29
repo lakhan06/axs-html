@@ -10,6 +10,7 @@ body {
   position: fixed;
   background-color: black;
   opacity: 0.72;
+  /* z-index: 2; */
 }
 
 .firefly {

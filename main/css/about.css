@@ -6,6 +6,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
 .about-us{
     /* background: url('../images/Clients/starSpaceBackground.jpg');
     background-repeat: no-repeat;
@@ -19,6 +21,7 @@
     overflow:hidden;
     position: relative;
     font-family: "Poppins", sans-serif;
+    z-index: 2;
     /* color: #1993c7; */
 }
 video {
@@ -212,7 +215,7 @@ li:hover {
     align-items: center;
     width: 340px;
     gap: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     font-size: 15px;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
@@ -227,11 +230,12 @@ li:hover {
   position: absolute;
   bottom: 10%;
   left: 33%;
+  z-index: 2;
   
 }
 
 
-.herobutton {
+.aboutbutton {
   width:43px;
   height: 43px;
 display: flex;
@@ -240,17 +244,21 @@ justify-content: center;
 padding: 10px;
 background-color: transparent;
 color: white;
-border: 0.2px solid rgba(215, 163, 212, 0.964);
+border: 0.2px solid #f674eff6;
 border-radius: 50%;
 z-index: 1;
 cursor: pointer;
 margin: 20px;
 }
 
-.herobutton i{
+.aboutbutton:hover{
+  transform: scale(1.2);
+}
+
+.aboutbutton i{
 font-size: 20px;
 }
-.herobutton img{
+.aboutbutton img{
 width: 40px;
 filter: brightness(4);
 }

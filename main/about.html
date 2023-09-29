@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="./css/about.css">
 <link rel="stylesheet" href="css/firefly.css">
 <link rel="stylesheet" href="css/mainreveal.css">
+<link rel="stylesheet" href="css/Galxy.css">
 <link
 rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
@@ -19,19 +20,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
 </script>
 <!-- <link rel="stylesheet" href="css/revealEffect.css"> -->
 <body>
-  <!-- <header>
-    <nav class='navbar'>
-      <a href="index.html"><img src="images/axs.png" alt="img" /></a>
-      <ul class='links-group'>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="clients.html">CLIENTS</a></li>
-        <li><a href="contact.html">CONTACT US</a></li>
-        <li><a href="Services3.html">SERVICES</a></li>
-        <li><a href="team.html">TEAM</a></li>
-      </ul>
-    </nav>
-  </header> -->
+  
   <video id="vid" muted autoplay plays-inline loop>
     <source src="./images/video (2160p).mp4" type="video/mp4">
   </video>
@@ -293,7 +282,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
         </a>
       </div>
       
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
       <script>
         const threeContainer = document.getElementById('three-container');
           const scene = new THREE.Scene();
@@ -383,19 +372,21 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.cs
   
           animate();
           
-      </script>
+      </script> -->
         <audio  id="volume" autoplay loop  style="z-index: 99999;">
   
     <source src="wandering-6394.mp3" type="audio/mpeg">
   
   </audio>
   
-  
+  <canvas id="canvas"></canvas>
 
     <script>
       let vol= document.getElementById('volume')
      vol.volume=0.5;
     </script> 
+
+    <script  type="module" src="js/Navbar.js"></script>
 
    
 </body>
