@@ -11,6 +11,8 @@ let contact = document.querySelector(".contact");
 let team = document.querySelector(".team");
 let content= document.querySelector(".content");
 let about=document.querySelector(".about-section")
+let firefly=document.querySelectorAll(".firefly")
+
 
 
 function galaxyVisible() {
@@ -20,6 +22,10 @@ function galaxyVisible() {
   particles.style.setProperty("opacity", "0");
   content.classList.add("transform-down")
   content.style.setProperty("opacity", "0");
+  firefly.forEach(element => {
+    
+    element.style.setProperty("display", "block");
+  });
  
 
     homebutton.classList.add("transform-origin-buttons")
@@ -51,6 +57,10 @@ function galaxyhide() {
   particles.style.setProperty("opacity", "1");
   content.classList.remove("transform-down")
   content.style.setProperty("opacity", "1");
+  firefly.forEach(element => {
+    
+    element.style.setProperty("display", "none");
+  });
  
 
     homebutton.classList.remove("transform-origin-buttons")
