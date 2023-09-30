@@ -15,6 +15,7 @@
     <!-- <link rel="stylesheet" href="css/mainreveal.css"> -->
     <link rel="stylesheet" href="css/Galaxy.css " />
     <link rel="stylesheet" href="css/clients.css" />
+    <link rel="stylesheet" href="css/team.css">
     <!-- <script src="https://unpkg.com/swup@4"></script>
 <script>
   const swup = new Swup();
@@ -27,8 +28,8 @@
     <video id="vid" muted autoplay plays-inline loop>
       <source src="./images/video (2160p).mp4" type="video/mp4" />
     </video>
-    <div class="veiw">
-      <button class="veiw-all" onclick="clientGo()">
+    <div class="veiw view-team">
+      <button class="veiw-all" onclick="teamGo()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -45,6 +46,26 @@
       </button>
       <p class="veiw-content">VIEW ALL</p>
     </div>
+  </div>
+  <div class="veiw view-client">
+    <button class="veiw-all" onclick="clientGo()">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-arrow-left arr-left"
+        viewBox="0 0 16 16"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+        />
+      </svg>
+    </button>
+    <p class="veiw-content">VIEW ALL</p>
+  </div>
+   
     <div class="firefly back"></div>
     <div class="firefly"></div>
     <div class="firefly back"></div>
@@ -290,7 +311,7 @@
           <!-- </div> -->
           <!-- </div> -->
         </a>
-        <a href="team.html" class="team transform-up-buttons">
+        <div class="team transform-up-buttons" onclick="teamCome()">
           <!-- <div class="button1"> -->
           <!-- <div class="button2"> -->
 
@@ -300,7 +321,7 @@
           <p class="text-home">TEAM</p>
           <!-- </div> -->
           <!-- </div> -->
-        </a>
+        </div>
         <a href="contact.html" class="contact transform-up-buttons">
           <!-- <div class="button1"> -->
           <!-- <div class="button2"> -->
@@ -405,7 +426,161 @@
           alt=""
         />
       </div>
+
+      
     </div>
+
+    <section class="team-section">
+      <div class="info">
+        <div class="i i1">
+            <i class="fa-solid fa-xmark cross"></i>
+            <div class="text">
+                <h1>Mister Mo</h1>
+                <h2>CEO</h2>
+                <p>
+                    A Web3 Consultant with a decade of management experience at prestigious companies like Mercedes and
+                    Vodafone. As the founder of our web3 service agency.
+                    <br>
+                    Mo helps businesses embrace blockchain technology, integrating it into their e-commerce systems and
+                    building a strong web3 community. With a proven track record supporting renowned brands like Diesel,
+                    Maison Margiela, and others, Mo guides brands at every stage of their web3 journey.
+                    <br>
+                    Mo's strategic mindset and deep web3 knowledge make him a valuable asset, ensuring clients stay
+                    ahead of the curve. By partnering with our agency, clients tap into Mo's expertise to establish a
+                    strong web3 presence and achieve success.
+
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="./images/Teams/mo.png" alt="">
+            </div>
+        </div>
+
+        <div class="i i2">
+            <i class="fa-solid fa-xmark cross"></i>
+            <div class="text">
+                <h1>Wilxlee</h1>
+                <h2>CSO</h2>
+                <p>
+                    Wun2Free Entertainment 10+ Years with +$50M Generated.
+                    <br>
+                    720 Sweets & ETC 7 International Locations - Excited 2019.
+                    <br>
+                    AMTP 2 National Locations — Excited 2014.
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="./images/Teams/wil.png" alt="">
+            </div>
+        </div>
+
+        <div class="i i3">
+            <i class="fa-solid fa-xmark cross"></i>
+            <div class="text">
+                <h1>Luciano</h1>
+                <h2>Tech Advisor</h2>
+                <p>
+                    Founder of Inventio Hub, a software house that empowers traditional companies to explore blockchain
+                    technology, metaverse presence, and NFTs for growth and innovation.
+                    <br><br>
+                    Runs a team of skilled developers, specialized in Web3 development, smart contract creation, and
+                    integration.
+
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="./images/Teams/luciano.png" alt="">
+            </div>
+        </div>
+
+        <div class="i i4">
+            <i class="fa-solid fa-xmark cross"></i>
+            <div class="text">
+                <h1>Mamady Conde</h1>
+                <h2>Creative Designer</h2>
+                <p>
+                    Versatile filmmaker, creative producer, entrepreneur, and marketing expert.
+                    <br>
+                    Collaborated with renowned brands like Nike, Honda, and LVMH.
+                    <br>
+                    Marketing efforts generated over $1 billion in revenue for web3 companies.
+                </p>
+            </div>
+
+            <div class="img">
+                <img src="./images/Teams/mamady.png" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="main-team">
+        <h1>TEAM AXS</h1>
+
+        <div class="box">
+           
+
+            <article class="card card1">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <img width="200px" src="./images/Teams/mo.png" alt="">
+
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">CEO</h2>
+                        <p>~ Mister Mo</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card2">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <img width="200px" src="./images/Teams/wil.png" alt="">
+
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">CSO</h2>
+                        <p>~ Wilxlee</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card3">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <img width="200px" src="./images/Teams/luciano.png" alt="">
+
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">Tech Advisor</h2>
+                        <p>~ Luciano</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card card4">
+                <div class="card__inner">
+                    <div class="card__body card__body--front">
+                        <img width="200px" src="./images/Teams/mamady.png" alt="">
+
+                    </div>
+                    <div class="card__body card__body--back">
+                        <h2 class="card__title">Creative Designer</h2>
+                        <p>~ Mamady Conde</p>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+    
+    </section>
     <!-- audio part -->
     <audio id="volume" autoplay loop style="z-index: 99999">
       <source src="wandering-6394.mp3" type="audio/mpeg" />
@@ -418,5 +593,6 @@
 
     <script src="Js/Home-to-Nav.js"></script>
     <script src="Js/client.js"></script>
+    <script src="Js/team.js"></script>
   </body>
 </html>
