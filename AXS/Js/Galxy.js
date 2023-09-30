@@ -374,7 +374,7 @@ new TWEEN.Tween({
   randomness: 0,
   rotate: 0,
 }).to({
-  radius: 1.44,
+  radius: 1.418,
   spin: Math.PI * 2,
   randomness: 0.5,
   rotate: Math.PI * 8,

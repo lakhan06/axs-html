@@ -32,7 +32,7 @@ background-color: transparent;
 color: white;
 border: 0.5px solid rgb(254, 182, 250);
 border-radius: 50%;
-z-index: 1;
+z-index: 5;
 cursor: pointer;
 margin: 20px;
 /* opacity: 0; */
@@ -76,12 +76,14 @@ filter: brightness(4);
   top: 21%;
   left: 46%;
    transition: all 2000ms ease;
+   z-index: 5;
   /* transition:  transform  2s ease; */
 }
 .abt{
   position: absolute;
   top: 33%;
   left: 30%;
+  z-index: 5;
   transition: all 2000ms ease;
 }
 .client{
@@ -89,18 +91,21 @@ filter: brightness(4);
   top: 63%;
   left: 31%;
   transition: all 2000ms ease;
+  z-index: 5;
 }
 
 .service{
   position: absolute;
   top: 75%;
   left: 49%;
+  z-index: 5;
   transition: all 2000ms ease;
 }
 .team{
   position: absolute;
   top: 61%;
   left: 65%;
+  z-index: 5;
   transition: all 2000ms ease;
 }
 .contact{
@@ -108,6 +113,7 @@ filter: brightness(4);
   top: 33%;
   left: 63%;
   transition: all 2000ms ease;
+  z-index: 5;
 }
 
 .buttons p{
