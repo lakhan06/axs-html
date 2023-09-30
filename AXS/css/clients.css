@@ -21,6 +21,7 @@
   transform: translateX(100%);
   transition: all 2000ms ease;
   z-index: 10;
+
 }
 
 input[type="radio"] {
