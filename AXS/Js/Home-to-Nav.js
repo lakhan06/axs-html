@@ -3,6 +3,7 @@ let canvas = document.querySelector("#canvas");
 let particles = document.querySelector("#particles-js");
 let HeroSection = document.querySelector(".Hero-section");
 let homebutton = document.querySelector(".home");
+let buttonbar= document.querySelector(".button-bar");
 let abt = document.querySelector(".abt");
 let client = document.querySelector(".client");
 let service = document.querySelector(".service");
@@ -85,6 +86,7 @@ function clientCome() {
   canvas.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "1");
   clientMain.style.setProperty("transform", "translateX(0)");
+  buttonbar.style.setProperty("opacity", "1");
   firefly.forEach((element) => {
     element.style.setProperty("display", "none");
   });
@@ -112,6 +114,7 @@ function clientGo() {
   canvas.style.setProperty("opacity", "1");
   clientMain.style.setProperty("transform", "translateX(100%)");
   viewclient.style.setProperty("opacity", "0");
+  buttonbar.style.setProperty("opacity", "0");
 
   firefly.forEach((element) => {
     element.style.setProperty("display", "block");
@@ -142,6 +145,7 @@ function teamCome() {
   canvas.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "1");
   teamSection.style.setProperty("transform", "translateX(0)");
+  buttonbar.style.setProperty("opacity", "1");
 
   firefly.forEach((element) => {
     element.style.setProperty("display", "none");
@@ -171,6 +175,7 @@ function teamGo() {
   canvas.style.setProperty("opacity", "1");
   teamSection.style.setProperty("transform", "translateX(100%)");
   viewteam.style.setProperty("opacity", "0");
+  buttonbar.style.setProperty("opacity", "0");
   firefly.forEach((element) => {
     element.style.setProperty("display", "none");
   });
@@ -199,6 +204,8 @@ function contactCome() {
   canvas.style.setProperty("opacity", "0");
   viewcontact.style.setProperty("opacity", "1");
   ContactSection.style.setProperty("transform", "translateX(0)");
+  
+  buttonbar.style.setProperty("opacity", "1");
 
   firefly.forEach((element) => {
     element.style.setProperty("display", "none");
@@ -228,6 +235,7 @@ function contactGo() {
   canvas.style.setProperty("opacity", "1");
   ContactSection.style.setProperty("transform", "translateX(100%)");
   viewcontact.style.setProperty("opacity", "0");
+  buttonbar.style.setProperty("opacity", "0");
   firefly.forEach((element) => {
     element.style.setProperty("display", "block");
   });
@@ -255,6 +263,7 @@ function aboutCome() {
   particles.style.setProperty("opacity", "1");
   canvas.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "1");
+  buttonbar.style.setProperty("opacity", "1");
   aboutusSection.style.setProperty("transform", "translateX(0)");
 
   firefly.forEach((element) => {
@@ -285,6 +294,7 @@ function aboutGo() {
   canvas.style.setProperty("opacity", "1");
   aboutusSection.style.setProperty("transform", "translateX(100%)");
   viewabout.style.setProperty("opacity", "0");
+  buttonbar.style.setProperty("opacity", "0");
   firefly.forEach((element) => {
     element.style.setProperty("display", "block");
   });
@@ -319,9 +329,11 @@ function visionCome(){
 }
 function visionGo(){
   particles.style.setProperty("opacity", "0");
+  // aboutusSection.style.setProperty("transform", "translateX(100%)");
   canvas.style.setProperty("opacity", "1");
   visionSection.style.setProperty("transform", "translateX(100%)");
   viewvision.style.setProperty("opacity", "0");
+  buttonbar.style.setProperty("opacity", "0");
   firefly.forEach((element) => {
     element.style.setProperty("display", "block");
   });

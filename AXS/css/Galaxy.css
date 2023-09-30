@@ -10,6 +10,7 @@
     position: absolute;
     display: none;
     transition: all 3s ease;
+    /* z-index: 6; */
   
   
     
@@ -32,7 +33,7 @@ background-color: transparent;
 color: white;
 border: 0.5px solid rgb(254, 182, 250);
 border-radius: 50%;
-z-index: 5;
+/* z-index: 5; */
 cursor: pointer;
 margin: 20px;
 /* opacity: 0; */
