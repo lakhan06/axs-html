@@ -3,6 +3,7 @@ let canvas = document.querySelector("#canvas");
 
 
 let particles = document.querySelector("#particles-js");
+let HeroSection = document.querySelector(".Hero-section");
 let homebutton = document.querySelector(".home");
 let abt= document.querySelector(".abt");
 let client = document.querySelector(".client");
@@ -12,6 +13,10 @@ let team = document.querySelector(".team");
 let content= document.querySelector(".content");
 let about=document.querySelector(".about-section")
 let firefly=document.querySelectorAll(".firefly")
+let clientMain=document.querySelector(".client-main")
+let veiw=document.querySelector(".veiw")
+
+
 
 
 
@@ -80,6 +85,60 @@ function galaxyhide() {
   
    
  
+}
+
+//-------------- galxy to client part--------------------
+function clientCome(){
+
+
+  canvas.style.setProperty("opacity", "0");
+  veiw.style.setProperty("opacity", "1");
+  clientMain.style.setProperty("transform", "translateX(0)");
+    
+    homebutton.classList.remove("transform-origin-buttons")
+    homebutton.classList.add("transform-up-buttons")
+   
+    abt.classList.remove("transform-origin-buttons")
+  abt.classList.add("transform-up-buttons")
+   
+    client.classList.remove("transform-origin-buttons")
+    client.classList.add("transform-up-buttons")
+   
+    service.classList.remove("transform-origin-buttons")
+    service.classList.add("transform-up-buttons")
+   
+    contact.classList.remove("transform-origin-buttons")
+  contact.classList.add("transform-up-buttons")
+   
+   team.classList.remove("transform-origin-buttons")
+    team.classList.add("transform-up-buttons")
+   
+}
+function clientGo(){
+
+
+  canvas.style.setProperty("opacity", "1");
+  clientMain.style.setProperty("transform", "translateX(100%)");
+  veiw.style.setProperty("opacity", "0");
+    
+  homebutton.classList.add("transform-origin-buttons")
+  homebutton.classList.remove("transform-up-buttons")
+ 
+  abt.classList.add("transform-origin-buttons")
+abt.classList.remove("transform-up-buttons")
+ 
+  client.classList.add("transform-origin-buttons")
+  client.classList.remove("transform-up-buttons")
+ 
+  service.classList.add("transform-origin-buttons")
+  service.classList.remove("transform-up-buttons")
+ 
+  contact.classList.add("transform-origin-buttons")
+contact.classList.remove("transform-up-buttons")
+ 
+ team.classList.add("transform-origin-buttons")
+  team.classList.remove("transform-up-buttons") 
+   
 }
 
 function aboutcome(){
