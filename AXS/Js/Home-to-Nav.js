@@ -16,9 +16,11 @@ let viewclient = document.querySelector(".view-client");
 let viewteam = document.querySelector(".view-team");
 let viewcontact = document.querySelector(".view-contact");
 let viewabout = document.querySelector(".view-about");
+let viewvision = document.querySelector(".view-vision");
 let teamSection = document.querySelector(".team-section");
 let ContactSection = document.querySelector(".Contact");
 let aboutusSection = document.querySelector(".about-us");
+let visionSection = document.querySelector(".canvas-wrapper");
 
 function galaxyVisible() {
   canvas.style.setProperty("display", "block");
@@ -283,6 +285,43 @@ function aboutGo() {
   canvas.style.setProperty("opacity", "1");
   aboutusSection.style.setProperty("transform", "translateX(100%)");
   viewabout.style.setProperty("opacity", "0");
+  firefly.forEach((element) => {
+    element.style.setProperty("display", "block");
+  });
+
+  homebutton.classList.add("transform-origin-buttons");
+  homebutton.classList.remove("transform-up-buttons");
+
+  abt.classList.add("transform-origin-buttons");
+  abt.classList.remove("transform-up-buttons");
+
+  client.classList.add("transform-origin-buttons");
+  client.classList.remove("transform-up-buttons");
+
+  service.classList.add("transform-origin-buttons");
+  service.classList.remove("transform-up-buttons");
+
+  contact.classList.add("transform-origin-buttons");
+  contact.classList.remove("transform-up-buttons");
+
+  team.classList.add("transform-origin-buttons");
+  team.classList.remove("transform-up-buttons");
+}
+
+// about to vision part
+
+function visionCome(){
+  aboutusSection.style.setProperty("transform", "translateX(-100%)");
+  visionSection.style.setProperty("transform", "translateX(0)");
+  viewabout.style.setProperty("opacity", "0");
+  viewvision.style.setProperty("opacity", "1");
+
+}
+function visionGo(){
+  particles.style.setProperty("opacity", "0");
+  canvas.style.setProperty("opacity", "1");
+  visionSection.style.setProperty("transform", "translateX(100%)");
+  viewvision.style.setProperty("opacity", "0");
   firefly.forEach((element) => {
     element.style.setProperty("display", "block");
   });
