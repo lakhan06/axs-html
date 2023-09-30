@@ -21,7 +21,9 @@
   top: 0;
   left: 0;
      overflow: hidden;
-     transform: translateX(100%);
+     /* transform: translateX(100%); */
+     transform: scale(0);
+     opacity: 1;
      transition: all 2000ms ease;
      z-index: 5;
 }
