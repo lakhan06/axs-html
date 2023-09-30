@@ -12,16 +12,20 @@ let team = document.querySelector(".team");
 let content = document.querySelector(".content");
 let about = document.querySelector(".about-section");
 let firefly = document.querySelectorAll(".firefly");
-let clientMain = document.querySelector(".client-main");
 let viewclient = document.querySelector(".view-client");
 let viewteam = document.querySelector(".view-team");
 let viewcontact = document.querySelector(".view-contact");
 let viewabout = document.querySelector(".view-about");
 let viewvision = document.querySelector(".view-vision");
+let clientMain = document.querySelector(".client-main");
 let teamSection = document.querySelector(".team-section");
 let ContactSection = document.querySelector(".Contact");
 let aboutusSection = document.querySelector(".about-us");
 let visionSection = document.querySelector(".canvas-wrapper");
+
+let aboutlink = document.querySelector(".about-link");
+
+
 
 function galaxyVisible() {
   canvas.style.setProperty("display", "block");
@@ -264,7 +268,9 @@ function aboutCome() {
   canvas.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "1");
   buttonbar.style.setProperty("opacity", "1");
+  // aboutlink.style.setProperty("display", "none");
   aboutusSection.style.setProperty("transform", "translateX(0)");
+
 
   firefly.forEach((element) => {
     element.style.setProperty("display", "none");
@@ -356,3 +362,81 @@ function visionGo(){
   team.classList.add("transform-origin-buttons");
   team.classList.remove("transform-up-buttons");
 }
+
+// Navbar to home
+ function homeComeFromBar(){
+  visionSection.style.setProperty("transform", "translateX(100%)");
+  aboutusSection.style.setProperty("transform", "translateX(100%)");
+  ContactSection.style.setProperty("transform", "translateX(100%)");
+  clientMain.style.setProperty("transform", "translateX(100%)");
+  teamSection.style.setProperty("transform", "translateX(100%)");
+  buttonbar.style.setProperty("opacity", "0");
+
+  content.classList.remove("transform-down");
+  content.style.setProperty("opacity", "1");
+
+
+  
+
+
+ }
+ function AboutComeFromBar(){
+  visionSection.style.setProperty("transform", "translateX(100%)");
+  aboutusSection.style.setProperty("transform", "translateX(0)");
+  ContactSection.style.setProperty("transform", "translateX(100%)");
+  clientMain.style.setProperty("transform", "translateX(100%)");
+  teamSection.style.setProperty("transform", "translateX(100%)");
+  buttonbar.style.setProperty("opacity", "1");
+
+  
+
+
+  
+
+
+ }
+ function clientComeFromBar(){
+  visionSection.style.setProperty("transform", "translateX(100%)");
+  aboutusSection.style.setProperty("transform", "translateX(100%)");
+  ContactSection.style.setProperty("transform", "translateX(100%)");
+  clientMain.style.setProperty("transform", "translateX(0)");
+  teamSection.style.setProperty("transform", "translateX(100%)");
+  buttonbar.style.setProperty("opacity", "1");
+
+  
+
+
+  
+
+
+ }
+ function teamComeFromBar(){
+  visionSection.style.setProperty("transform", "translateX(100%)");
+  aboutusSection.style.setProperty("transform", "translateX(100%)");
+  ContactSection.style.setProperty("transform", "translateX(100%)");
+  clientMain.style.setProperty("transform", "translateX(100%)");
+  teamSection.style.setProperty("transform", "translateX(0)");
+  buttonbar.style.setProperty("opacity", "1");
+
+  
+
+
+  
+
+
+ }
+ function contactComeFromBar(){
+  visionSection.style.setProperty("transform", "translateX(100%)");
+  aboutusSection.style.setProperty("transform", "translateX(100%)");
+  ContactSection.style.setProperty("transform", "translateX(0)");
+  clientMain.style.setProperty("transform", "translateX(100%)");
+  teamSection.style.setProperty("transform", "translateX(100%)");
+  buttonbar.style.setProperty("opacity", "1");
+
+  
+
+
+  
+
+
+ }
