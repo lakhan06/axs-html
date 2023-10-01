@@ -9,7 +9,7 @@ let client = document.querySelector(".client");
 let service = document.querySelector(".service");
 let contact = document.querySelector(".contact");
 let team = document.querySelector(".team");
-let content = document.querySelector(".content");
+let content = document.querySelector(".content-home");
 let about = document.querySelector(".about-section");
 let firefly = document.querySelectorAll(".firefly");
 let viewclient = document.querySelector(".view-client");
@@ -28,6 +28,7 @@ let aboutlink = document.querySelector(".about-link");
 function galaxyVisible() {
   canvas.style.setProperty("display", "block");
   canvas.style.setProperty("opacity", "1");
+  particles.style.setProperty("transform", "translateY(100%)");
   particles.style.setProperty("opacity", "0");
   content.classList.add("transform-down");
   content.style.setProperty("opacity", "0");
@@ -57,6 +58,7 @@ function galaxyVisible() {
 function galaxyhide() {
   canvas.style.setProperty("opacity", "0");
   particles.style.setProperty("opacity", "1");
+  particles.style.setProperty("transform", "translateY(0)");
   content.classList.remove("transform-down");
   content.style.setProperty("opacity", "1");
   firefly.forEach((element) => {
@@ -85,6 +87,7 @@ function galaxyhide() {
 //-------------- galxy to client part--------------------
 function clientCome() {
   particles.style.setProperty("opacity", "1");
+  particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "1");
   clientMain.style.setProperty("transform", "scale(1)");
@@ -114,6 +117,7 @@ function clientCome() {
 }
 function clientGo() {
   particles.style.setProperty("opacity", "0");
+  particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // clientMain.style.setProperty("transform", "translateX(100%)");
   clientMain.style.setProperty("transform", "scale(0)");
@@ -147,6 +151,7 @@ function clientGo() {
 // ----------galaxy to team part--------------------
 function teamCome() {
   particles.style.setProperty("opacity", "1");
+  particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "1");
   // teamSection.style.setProperty("transform", "translateX(0)");
@@ -179,6 +184,7 @@ function teamCome() {
 
 function teamGo() {
   particles.style.setProperty("opacity", "0");
+  particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // teamSection.style.setProperty("transform", "translateX(100%)");
   teamSection.style.setProperty("transform", "scale(0)");
@@ -210,6 +216,7 @@ function teamGo() {
 // ----------galaxy to Contact part--------------------
 function contactCome() {
   particles.style.setProperty("opacity", "1");
+  particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewcontact.style.setProperty("opacity", "1");
   // ContactSection.style.setProperty("transform", "translateX(0)");
@@ -243,6 +250,7 @@ function contactCome() {
 
 function contactGo() {
   particles.style.setProperty("opacity", "0");
+  particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // ContactSection.style.setProperty("transform", "translateX(100%)");
   ContactSection.style.setProperty("transform", "scale(0)");
@@ -274,6 +282,7 @@ function contactGo() {
 // ----------galaxy to about part--------------------
 function aboutCome() {
   particles.style.setProperty("opacity", "1");
+  particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "1");
   buttonbar.style.setProperty("opacity", "1");
@@ -307,6 +316,7 @@ function aboutCome() {
 
 function aboutGo() {
   particles.style.setProperty("opacity", "0");
+  particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // aboutusSection.style.setProperty("transform", "translateX(100%)");
   aboutusSection.style.setProperty("transform", "scale(0)");
@@ -351,6 +361,7 @@ function visionCome() {
 }
 function visionGo() {
   particles.style.setProperty("opacity", "0");
+  particles.style.setProperty("transform", "translateY(100%)");
   // aboutusSection.style.setProperty("transform", "translateX(100%)");
   canvas.style.setProperty("opacity", "1");
   // visionSection.style.setProperty("transform", "translateX(100%)");

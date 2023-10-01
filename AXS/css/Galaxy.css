@@ -10,7 +10,7 @@
     position: absolute;
     display: none;
     transition: all 3s ease;
-    /* z-index: 6; */
+    /* z-index: -1; */
   
   
     
@@ -33,7 +33,7 @@ background-color: transparent;
 color: white;
 border: 0.5px solid rgb(254, 182, 250);
 border-radius: 50%;
-/* z-index: 5; */
+z-index: 1;
 cursor: pointer;
 margin: 20px;
 /* opacity: 0; */
@@ -78,7 +78,7 @@ filter: brightness(4);
   left: 46%;
    transition: all 2000ms ease;
    z-index: 5;
-  /* transition:  transform  2s ease; */
+  transition:  transform  2s ease;
 }
 .abt{
   position: absolute;
