@@ -10,10 +10,7 @@
     position: absolute;
     display: none;
     transition: all 3s ease;
-    /* z-index: 6; */
-  
-  
-    
+    z-index: 900;    
   }
   
   
@@ -33,7 +30,6 @@ background-color: transparent;
 color: white;
 border: 0.5px solid rgb(254, 182, 250);
 border-radius: 50%;
-/* z-index: 5; */
 cursor: pointer;
 margin: 20px;
 /* opacity: 0; */
@@ -74,49 +70,77 @@ filter: brightness(4);
 }
 .home{
   position: absolute;
-  top: 21%;
-  left: 46%;
+  top: 20%;
+  left: 47%;
    transition: all 2000ms ease;
-   z-index: 5;
+   z-index: 999;
   /* transition:  transform  2s ease; */
+}
+.home:hover .hm{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
 }
 .abt{
   position: absolute;
-  top: 33%;
-  left: 30%;
-  z-index: 5;
+  top: 31%;
+  left: 28%;
+  z-index: 999;
   transition: all 2000ms ease;
+}
+.abt:hover .at{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
 }
 .client{
   position: absolute;
-  top: 63%;
-  left: 31%;
+  top: 61%;
+  left: 28%;
   transition: all 2000ms ease;
-  z-index: 5;
+  z-index: 999;
 }
-
+.client:hover .cl{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
 .service{
   position: absolute;
-  top: 75%;
-  left: 49%;
-  z-index: 5;
+  top: 72%;
+  left: 48%;
+  z-index: 999;
   transition: all 2000ms ease;
+}
+.service:hover .sr{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
 }
 .team{
   position: absolute;
-  top: 61%;
-  left: 65%;
-  z-index: 5;
+  top: 58%;
+  left: 67%;
+  z-index: 999;
   transition: all 2000ms ease;
+}
+.team:hover .tm{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
 }
 .contact{
   position: absolute;
-  top: 33%;
-  left: 63%;
+  top: 31%;
+  left: 67%;
   transition: all 2000ms ease;
-  z-index: 5;
+  z-index: 999;
 }
-
+.contact:hover .ct{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
 .buttons p{
   color: white;
   font-family: 'poppins';
