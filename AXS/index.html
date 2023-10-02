@@ -1,886 +1,857 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-    />
-    <link rel="stylesheet" href="./css/index.css" />
-    
-    <link rel="stylesheet" href="css/firefly.css" />
-    <link rel="stylesheet" href="css/about.css" />
 
-    <link rel="stylesheet" href="css/Galaxy.css " />
-    <link rel="stylesheet" href="css/clients.css" />
-    <link rel="stylesheet" href="css/team.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/vision.css">
-    <!-- <link rel="stylesheet" href="css/Services.css"> -->
-   
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./css/index.css" />
 
-  <body>
-    <div id="three-container"></div>
-    <div id="particles-js"></div>
-    <div class="overlay"></div>
-    <video id="vid" muted autoplay plays-inline loop>
-      <source src="./images/video (2160p).mp4" type="video/mp4" />
-    </video>
-    <div class="veiw view-team">
-      <button class="veiw-all" onclick="teamGo()">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          fill="currentColor"
-          class="bi bi-arrow-left arr-left"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-          />
-        </svg>
-      </button>
-      <p class="veiw-content">VIEW ALL</p>
-    </div>
+  <link rel="stylesheet" href="css/firefly.css" />
+  <link rel="stylesheet" href="css/about.css" />
+
+  <link rel="stylesheet" href="css/Galaxy.css " />
+  <link rel="stylesheet" href="css/clients.css" />
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/vision.css">
+  <!-- <link rel="stylesheet" href="css/Services.css"> -->
+
+</head>
+
+<body>
+  <script>
+    function update(e) {
+      var x = e.clientX || e.touches[0].clientX
+      var y = e.clientY || e.touches[0].clientY
+
+      document.documentElement.style.setProperty('--cursorX', x + 'px')
+      document.documentElement.style.setProperty('--cursorY', y + 'px')
+    }
+
+    document.addEventListener('mousemove', update)
+    document.addEventListener('touchmove', update)
+  </script>
+  <div id="three-container"></div>
+  <div id="particles-js"></div>
+
+
+  <div class="overlay"></div>
+  <video id="vid" muted autoplay plays-inline loop>
+    <source src="./images/video (2160p).mp4" type="video/mp4" />
+  </video>
+  <div class="veiw view-team">
+    <button class="veiw-all" onclick="teamGo()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+      </svg>
+    </button>
+    <p class="veiw-content">VIEW ALL</p>
+  </div>
   </div>
   <div class="veiw view-client">
     <button class="veiw-all" onclick="clientGo()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-arrow-left arr-left"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
       </svg>
     </button>
     <p class="veiw-content">VIEW ALL</p>
   </div>
   <div class="veiw view-contact">
     <button class="veiw-all" onclick="contactGo()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-arrow-left arr-left"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
       </svg>
     </button>
     <p class="veiw-content">VIEW ALL</p>
   </div>
   <div class="veiw view-about">
     <button class="veiw-all" onclick="aboutGo()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-arrow-left arr-left"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
       </svg>
     </button>
     <p class="veiw-content">VIEW ALL</p>
   </div>
   <div class="veiw view-vision">
     <button class="veiw-all" onclick="visionGo()">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-arrow-left arr-left"
-        viewBox="0 0 16 16"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
-        />
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
       </svg>
     </button>
     <p class="veiw-content">VIEW ALL</p>
   </div>
-   
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly back"></div>
-    <div class="firefly back"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
-    <div class="firefly"></div>
+
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly back"></div>
+  <div class="firefly back"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
 
 
-    <div class="audio-button">
-      <button id="audio-toggle" onclick="toggleButton()">
-        AUDIO
-      </button>
-    </div>
+  <div class="audio-button">
+    <button id="audio-toggle" onclick="toggleButton()">
+      AUDIO
+    </button>
+  </div>
 
-    <script>
-      function toggleButton(){
-        var audioButton = document.getElementById("volume");
-        audioButton.classList.add("muted")
+  <script>
+    function toggleButton() {
+      var audioButton = document.getElementById("volume");
+      if (audioButton.muted) {
+        audioButton.muted = false;
       }
-    </script>
+      else {
+        audioButton.muted = true;
+      }
+    }
+  </script>
 
-    <div class="button-bar">
+  <div class="button-bar">
 
-      <div>
-          <!-- <div class="button1"> -->
-              <!-- <div class="button2"> -->
-                  
-                  <button class="herobutton hb" onclick="homeComeFromBar()">
-                      <i class="bi bi-house-fill"></i>
-                  </button>
-              <!-- </div> -->
-          <!-- </div> -->
+    <div>
+      <!-- <div class="button1"> -->
+      <!-- <div class="button2"> -->
+
+      <button class="herobutton hb" onclick="homeComeFromBar()">
+        <i class="bi bi-house-fill"></i>
+      </button>
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div class="about-link" onclick="AboutComeFromBar()">
+      <!-- <div class="button1"> -->
+      <!-- <div class="button2"> -->
+
+      <button class="herobutton ab">
+        <img src="./images/axs.png" alt="">
+      </button>
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div onclick="clientComeFromBar()">
+      <!-- <div class="button1"> -->
+      <!-- <div class="button2"> -->
+
+      <button class="herobutton cb">
+        <i class="bi bi-person-check"></i>
+      </button>
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div>
+      <!-- <div class="button1"> -->
+      <!-- <div class="button2"> -->
+
+      <button class="herobutton sb">
+        <i class="bi bi-sliders"></i>
+      </button>
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div onclick="teamComeFromBar()">
+      <!-- <div class="button1"> -->
+      <!-- <div class="button2"> -->
+
+      <button class="herobutton tb">
+        <i class="bi bi-people-fill"></i>
+      </button>
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+    <div onclick="contactComeFromBar()">
+      <!-- <div class="button1"> -->
+      <!-- <div class="button2"> -->
+
+      <button class="herobutton cob">
+        <i class="bi bi-telephone-fill"></i>
+      </button>
+      <!-- </div> -->
+      <!-- </div> -->
+    </div>
+  </div>
+
+  <div class="Hero-section">
+    <div class="content-home">
+      <div class="tagline">Navigating the Web3 Frontier</div>
+      <span id="sub"> Guided by Your Success</span>
+      <!-- <div class="tagline2"></div> -->
+      <div class="detail">
+        From ideation to creation and post-launch support, we provide
+        end-to-end assistance. Our goal is to establish AXS as a specialized
+        and innovative agency, acknowledged by our competitors. With a robust
+        network and exceptional communication skills, we strive to be seen as
+        genuine, client-oriented consultants who prioritize our clients' best
+        interests above all else.
       </div>
-      <div class="about-link" onclick="AboutComeFromBar()">
-        <!-- <div class="button1"> -->
-              <!-- <div class="button2"> -->
-                  
-                  <button class="herobutton ab">
-                      <img src="./images/axs.png" alt="">
-                  </button>
-              <!-- </div> -->
-          <!-- </div> -->
-      </div>
-      <div onclick="clientComeFromBar()">
-        <!-- <div class="button1"> -->
+
+      <div class="button-home">
+        Explore the Future
+
+        <div class="button1" onclick="galaxyVisible()">
           <!-- <div class="button2"> -->
-            
-            <button class="herobutton cb">
-              <i class="bi bi-person-check"></i>
-            </button>
+
+          <button class="homebutton">
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+            </div>
+          </button>
           <!-- </div> -->
+        </div>
+      </div>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <div class="buttons">
+      <div class="home transform-up-buttons" onclick="galaxyhide()">
+        <!-- <div class="button1"> -->
+        <!-- <div class="button2"> -->
+        <p class="text-home">HOME</p>
+        <button class="herobutton hm">
+          <i class="bi bi-house-fill"></i>
+        </button>
+        <!-- </div> -->
         <!-- </div> -->
       </div>
-      <div>
+      <div class="abt transform-up-buttons" onclick="aboutCome()">
         <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-            
-            <button class="herobutton sb">
-              <i class="bi bi-sliders"></i>
-            </button>
-          <!-- </div> -->
+        <!-- <div class="button2"> -->
+        <p class="text-home">ABOUT</p>
+        <button class="herobutton at">
+          <img src="./images/axs.png" alt="" />
+        </button>
+        <!-- </div> -->
         <!-- </div> -->
       </div>
-      <div onclick="teamComeFromBar()">
-          <!-- <div class="button1"> -->
-              <!-- <div class="button2"> -->
-                  
-                  <button class="herobutton tb">
-                      <i class="bi bi-people-fill"></i>
-                  </button>
-              <!-- </div> -->
-          <!-- </div> -->
+      <div class="client transform-up-buttons" onclick="clientCome()">
+        <!-- <div class="button1"> -->
+        <!-- <div class="button2"> -->
+
+        <button class="herobutton cl">
+          <i class="bi bi-person-check"></i>
+        </button>
+        <p class="text-home">CLIENTS</p>
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
-      <div onclick="contactComeFromBar()">
-          <!-- <div class="button1"> -->
-              <!-- <div class="button2"> -->
-                  
-                  <button class="herobutton cob">
-                      <i class="bi bi-telephone-fill"></i>
-                  </button>
-              <!-- </div> -->
-          <!-- </div> -->
+      <a href="Services3.html" class="service transform-up-buttons">
+        <!-- <div class="button1"> -->
+        <!-- <div class="button2"> -->
+
+        <button class="herobutton sr">
+          <i class="bi bi-sliders"></i>
+        </button>
+        <p class="text-home">SERVICES</p>
+        <!-- </div> -->
+        <!-- </div> -->
+      </a>
+      <div class="team transform-up-buttons" onclick="teamCome()">
+        <!-- <div class="button1"> -->
+        <!-- <div class="button2"> -->
+
+        <button class="herobutton tm">
+          <i class="bi bi-people-fill"></i>
+        </button>
+        <p class="text-home">TEAM</p>
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
-    </div>
+      <div class="contact transform-up-buttons" onclick="contactCome()">
+        <!-- <div class="button1"> -->
+        <!-- <div class="button2"> -->
+        <p class="text-home">CONTACT</p>
+        <button class="herobutton ct">
+          <i class="bi bi-telephone-fill"></i>
+        </button>
 
-    <div class="Hero-section">
-      <div class="content-home">
-        <div class="tagline">Navigating the Web3 Frontier</div>
-        <span id="sub"> Guided by Your Success</span>
-        <!-- <div class="tagline2"></div> -->
-        <div class="detail">
-          From ideation to creation and post-launch support, we provide
-          end-to-end assistance. Our goal is to establish AXS as a specialized
-          and innovative agency, acknowledged by our competitors. With a robust
-          network and exceptional communication skills, we strive to be seen as
-          genuine, client-oriented consultants who prioritize our clients' best
-          interests above all else.
-        </div>
-
-        <div class="button-home">
-          Explore the Future
-
-          <div class="button1" onclick="galaxyVisible()">
-            <!-- <div class="button2"> -->
-
-            <button class="homebutton">
-              <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-arrow-right"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                  />
-                </svg>
-              </div>
-            </button>
-            <!-- </div> -->
-          </div>
-        </div>
-
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-       
-      </div>
-      <canvas id="canvas"></canvas>
-
-      <div class="buttons">
-        <div class="home transform-up-buttons" onclick="galaxyhide()">
-          <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-          <p class="text-home">HOME</p>
-          <button class="herobutton hm">
-            <i class="bi bi-house-fill"></i>
-          </button>
-          <!-- </div> -->
-          <!-- </div> -->
-        </div>
-        <div class="abt transform-up-buttons" onclick="aboutCome()">
-          <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-          <p class="text-home">ABOUT</p>
-          <button class="herobutton at">
-            <img src="./images/axs.png" alt="" />
-          </button>
-          <!-- </div> -->
-          <!-- </div> -->
-        </div>
-        <div class="client transform-up-buttons" onclick="clientCome()">
-          <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-
-          <button class="herobutton cl">
-            <i class="bi bi-person-check"></i>
-          </button>
-          <p class="text-home">CLIENTS</p>
-          <!-- </div> -->
-          <!-- </div> -->
-        </div>
-        <a href="Services3.html" class="service transform-up-buttons">
-          <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-
-          <button class="herobutton sr">
-            <i class="bi bi-sliders"></i>
-          </button>
-          <p class="text-home">SERVICES</p>
-          <!-- </div> -->
-          <!-- </div> -->
-        </a>
-        <div class="team transform-up-buttons" onclick="teamCome()">
-          <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-
-          <button class="herobutton tm">
-            <i class="bi bi-people-fill"></i>
-          </button>
-          <p class="text-home">TEAM</p>
-          <!-- </div> -->
-          <!-- </div> -->
-        </div>
-        <div class="contact transform-up-buttons" onclick="contactCome()">
-          <!-- <div class="button1"> -->
-          <!-- <div class="button2"> -->
-          <p class="text-home">CONTACT</p>
-          <button class="herobutton ct">
-            <i class="bi bi-telephone-fill"></i>
-          </button>
-
-          <!-- </div> -->
-          <!-- </div> -->
-        </div>
-      </div>
-      <script src="Js/Particle.js"></script>
-    </div>
-    <div class="clients-page">
-      <div class="client-main">
-        <input type="radio" name="slider" id="c1" />
-        <input type="radio" name="slider" id="c2" />
-        <input type="radio" name="slider" id="c3" />
-  
-        <div class="bundle">
-          <div class="singleCard card1">
-            <div class="photu">
-              <img src="./images/Clients/1984Img.png" alt="" />
-            </div>
-            <div class="text">
-              <img class="small" src="./images/Clients/1984redux.png" alt="" />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-                quas natus hic obcaecati explicabo, zperspiciatis placeat
-                provident consectetur dolorem tenetur?
-              </p>
-            </div>
-          </div>
-  
-          <div class="singleCard card2">
-            <div class="photu">
-              <img src="./images/Clients/HapePrime.webp" alt="" />
-            </div>
-            <div class="text">
-              <img src="./images/Clients/hape-prime-logo-white.png" alt="" />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-                quas natus hic obcaecati explicabo, zperspiciatis placeat
-                provident consectetur dolorem tenetur?
-              </p>
-            </div>
-          </div>
-          <div class="singleCard card3">
-            <div class="photu">
-              <img src="./images/Clients/DieselNFT.gif" alt="" />
-            </div>
-            <div class="text">
-              <img
-                class="small"
-                src="./images/Clients/diesel-logo-white.png"
-                alt=""
-              />
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
-                quas natus hic obcaecati explicabo, zperspiciatis placeat
-                provident consectetur dolorem tenetur?
-              </p>
-            </div>
-          </div>
-        </div>
-  
-        <div class="mainLogos">
-          <label for="c1"
-            ><img id="ML1" src="./images/Clients/1984redux.png" for="c1" alt=""
-          /></label>
-          <div class="vLine"></div>
-          <label for="c2"
-            ><img
-              class="big"
-              id="ML2"
-              src="./images/Clients/hape-prime-logo-white.png"
-              for="c2"
-              alt=""
-          /></label>
-          <div class="vLine"></div>
-          <label for="c3"
-            ><img
-              id="ML3"
-              src="./images/Clients/diesel-logo-white.png"
-              for="c3"
-              alt=""
-          /></label>
-        </div>
-  
-        <div class="line"></div>
-  
-        <div class="others">
-          <img src="./images/Clients/jil-sander-logo-white.png" alt="" />
-          <img src="./images/Clients/maison-margiela-logo-white.png" alt="" />
-          <img src="./images/Clients/brave-kid-logo-white.png" alt="" />
-          <img src="./images/Clients/azuki-logo-white.png" alt="" />
-          <img class="sm" src="./images/Clients/nike-logo-white.png" alt="" />
-          <img class="sm" src="./images/Clients/memeland-logo-white.png" alt="" />
-          <img
-            class="samsung"
-            src="./images/Clients/samsung-logo-white.png"
-            alt=""
-          />
-        </div>
-  
-        
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </div>
-    
+    <script src="Js/Particle.js"></script>
+  </div>
+  <div class="clients-page">
+    <div class="client-main">
+      <input type="radio" name="slider" id="c1" />
+      <input type="radio" name="slider" id="c2" />
+      <input type="radio" name="slider" id="c3" />
 
-    <section class="team-section">
-      <div class="info">
-        <div class="i i1">
-            <i class="fa-solid fa-xmark cross"></i>
-            <div class="text">
-                <h1>Mister Mo</h1>
-                <h2>CEO</h2>
-                <p>
-                    A Web3 Consultant with a decade of management experience at prestigious companies like Mercedes and
-                    Vodafone. As the founder of our web3 service agency.
-                    <br>
-                    Mo helps businesses embrace blockchain technology, integrating it into their e-commerce systems and
-                    building a strong web3 community. With a proven track record supporting renowned brands like Diesel,
-                    Maison Margiela, and others, Mo guides brands at every stage of their web3 journey.
-                    <br>
-                    Mo's strategic mindset and deep web3 knowledge make him a valuable asset, ensuring clients stay
-                    ahead of the curve. By partnering with our agency, clients tap into Mo's expertise to establish a
-                    strong web3 presence and achieve success.
-
-                </p>
-            </div>
-
-            <div class="img">
-                <img src="./images/Teams/mo.png" alt="">
-            </div>
+      <div class="bundle">
+        <div class="singleCard card1">
+          <div class="photu">
+            <img src="./images/Clients/1984Img.png" alt="" />
+          </div>
+          <div class="text">
+            <img class="small" src="./images/Clients/1984redux.png" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              quas natus hic obcaecati explicabo, zperspiciatis placeat
+              provident consectetur dolorem tenetur?
+            </p>
+          </div>
         </div>
 
-        <div class="i i2">
-            <i class="fa-solid fa-xmark cross"></i>
-            <div class="text">
-                <h1>Wilxlee</h1>
-                <h2>CSO</h2>
-                <p>
-                    Wun2Free Entertainment 10+ Years with +$50M Generated.
-                    <br>
-                    720 Sweets & ETC 7 International Locations - Excited 2019.
-                    <br>
-                    AMTP 2 National Locations — Excited 2014.
-                </p>
-            </div>
+        <div class="singleCard card2">
+          <div class="photu">
+            <img src="./images/Clients/HapePrime.webp" alt="" />
+          </div>
+          <div class="text">
+            <img src="./images/Clients/hape-prime-logo-white.png" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              quas natus hic obcaecati explicabo, zperspiciatis placeat
+              provident consectetur dolorem tenetur?
+            </p>
+          </div>
+        </div>
+        <div class="singleCard card3">
+          <div class="photu">
+            <img src="./images/Clients/DieselNFT.gif" alt="" />
+          </div>
+          <div class="text">
+            <img class="small" src="./images/Clients/diesel-logo-white.png" alt="" />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+              quas natus hic obcaecati explicabo, zperspiciatis placeat
+              provident consectetur dolorem tenetur?
+            </p>
+          </div>
+        </div>
+      </div>
 
-            <div class="img">
-                <img src="./images/Teams/wil.png" alt="">
-            </div>
+      <div class="mainLogos">
+        <label for="c1"><img id="ML1" src="./images/Clients/1984redux.png" for="c1" alt="" /></label>
+        <div class="vLine"></div>
+        <label for="c2"><img class="big" id="ML2" src="./images/Clients/hape-prime-logo-white.png" for="c2"
+            alt="" /></label>
+        <div class="vLine"></div>
+        <label for="c3"><img id="ML3" src="./images/Clients/diesel-logo-white.png" for="c3" alt="" /></label>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="others">
+        <img src="./images/Clients/jil-sander-logo-white.png" alt="" />
+        <img src="./images/Clients/maison-margiela-logo-white.png" alt="" />
+        <img src="./images/Clients/brave-kid-logo-white.png" alt="" />
+        <img src="./images/Clients/azuki-logo-white.png" alt="" />
+        <img class="sm" src="./images/Clients/nike-logo-white.png" alt="" />
+        <img class="sm" src="./images/Clients/memeland-logo-white.png" alt="" />
+        <img class="samsung" src="./images/Clients/samsung-logo-white.png" alt="" />
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <section class="team-section">
+    <div class="info">
+      <div class="i i1">
+        <i class="fa-solid fa-xmark cross"></i>
+        <div class="text">
+          <h1>Mister Mo</h1>
+          <h2>CEO</h2>
+          <p>
+            A Web3 Consultant with a decade of management experience at prestigious companies like Mercedes and
+            Vodafone. As the founder of our web3 service agency.
+            <br>
+            Mo helps businesses embrace blockchain technology, integrating it into their e-commerce systems and
+            building a strong web3 community. With a proven track record supporting renowned brands like Diesel,
+            Maison Margiela, and others, Mo guides brands at every stage of their web3 journey.
+            <br>
+            Mo's strategic mindset and deep web3 knowledge make him a valuable asset, ensuring clients stay
+            ahead of the curve. By partnering with our agency, clients tap into Mo's expertise to establish a
+            strong web3 presence and achieve success.
+
+          </p>
         </div>
 
-        <div class="i i3">
-            <i class="fa-solid fa-xmark cross"></i>
-            <div class="text">
-                <h1>Luciano</h1>
-                <h2>Tech Advisor</h2>
-                <p>
-                    Founder of Inventio Hub, a software house that empowers traditional companies to explore blockchain
-                    technology, metaverse presence, and NFTs for growth and innovation.
-                    <br><br>
-                    Runs a team of skilled developers, specialized in Web3 development, smart contract creation, and
-                    integration.
+        <div class="img">
+          <img src="./images/Teams/mo.png" alt="">
+        </div>
+      </div>
 
-                </p>
-            </div>
-
-            <div class="img">
-                <img src="./images/Teams/luciano.png" alt="">
-            </div>
+      <div class="i i2">
+        <i class="fa-solid fa-xmark cross"></i>
+        <div class="text">
+          <h1>Wilxlee</h1>
+          <h2>CSO</h2>
+          <p>
+            Wun2Free Entertainment 10+ Years with +$50M Generated.
+            <br>
+            720 Sweets & ETC 7 International Locations - Excited 2019.
+            <br>
+            AMTP 2 National Locations — Excited 2014.
+          </p>
         </div>
 
-        <div class="i i4">
-            <i class="fa-solid fa-xmark cross"></i>
-            <div class="text">
-                <h1>Mamady Conde</h1>
-                <h2>Creative Designer</h2>
-                <p>
-                    Versatile filmmaker, creative producer, entrepreneur, and marketing expert.
-                    <br>
-                    Collaborated with renowned brands like Nike, Honda, and LVMH.
-                    <br>
-                    Marketing efforts generated over $1 billion in revenue for web3 companies.
-                </p>
-            </div>
-
-            <div class="img">
-                <img src="./images/Teams/mamady.png" alt="">
-            </div>
+        <div class="img">
+          <img src="./images/Teams/wil.png" alt="">
         </div>
+      </div>
+
+      <div class="i i3">
+        <i class="fa-solid fa-xmark cross"></i>
+        <div class="text">
+          <h1>Luciano</h1>
+          <h2>Tech Advisor</h2>
+          <p>
+            Founder of Inventio Hub, a software house that empowers traditional companies to explore blockchain
+            technology, metaverse presence, and NFTs for growth and innovation.
+            <br><br>
+            Runs a team of skilled developers, specialized in Web3 development, smart contract creation, and
+            integration.
+
+          </p>
+        </div>
+
+        <div class="img">
+          <img src="./images/Teams/luciano.png" alt="">
+        </div>
+      </div>
+
+      <div class="i i4">
+        <i class="fa-solid fa-xmark cross"></i>
+        <div class="text">
+          <h1>Mamady Conde</h1>
+          <h2>Creative Designer</h2>
+          <p>
+            Versatile filmmaker, creative producer, entrepreneur, and marketing expert.
+            <br>
+            Collaborated with renowned brands like Nike, Honda, and LVMH.
+            <br>
+            Marketing efforts generated over $1 billion in revenue for web3 companies.
+          </p>
+        </div>
+
+        <div class="img">
+          <img src="./images/Teams/mamady.png" alt="">
+        </div>
+      </div>
 
     </div>
 
 
 
     <div class="main-team">
-        <h1>TEAM AXS</h1>
+      <h1>TEAM AXS</h1>
 
-        <div class="box">
-           
+      <div class="box">
 
-            <article class="card card1">
-                <div class="card__inner">
-                    <div class="card__body card__body--front">
-                        <img width="200px" src="./images/Teams/mo.png" alt="">
 
-                    </div>
-                    <div class="card__body card__body--back">
-                        <h2 class="card__title">CEO</h2>
-                        <p>~ Mister Mo</p>
-                    </div>
-                </div>
-            </article>
+        <article class="card card1">
+          <div class="card__inner">
+            <div class="card__body card__body--front">
+              <img width="200px" src="./images/Teams/mo.png" alt="">
 
-            <article class="card card2">
-                <div class="card__inner">
-                    <div class="card__body card__body--front">
-                        <img width="200px" src="./images/Teams/wil.png" alt="">
+            </div>
+            <div class="card__body card__body--back">
+              <h2 class="card__title">CEO</h2>
+              <p>~ Mister Mo</p>
+            </div>
+          </div>
+        </article>
 
-                    </div>
-                    <div class="card__body card__body--back">
-                        <h2 class="card__title">CSO</h2>
-                        <p>~ Wilxlee</p>
-                    </div>
-                </div>
-            </article>
+        <article class="card card2">
+          <div class="card__inner">
+            <div class="card__body card__body--front">
+              <img width="200px" src="./images/Teams/wil.png" alt="">
 
-            <article class="card card3">
-                <div class="card__inner">
-                    <div class="card__body card__body--front">
-                        <img width="200px" src="./images/Teams/luciano.png" alt="">
+            </div>
+            <div class="card__body card__body--back">
+              <h2 class="card__title">CSO</h2>
+              <p>~ Wilxlee</p>
+            </div>
+          </div>
+        </article>
 
-                    </div>
-                    <div class="card__body card__body--back">
-                        <h2 class="card__title">Tech Advisor</h2>
-                        <p>~ Luciano</p>
-                    </div>
-                </div>
-            </article>
+        <article class="card card3">
+          <div class="card__inner">
+            <div class="card__body card__body--front">
+              <img width="200px" src="./images/Teams/luciano.png" alt="">
 
-            <article class="card card4">
-                <div class="card__inner">
-                    <div class="card__body card__body--front">
-                        <img width="200px" src="./images/Teams/mamady.png" alt="">
+            </div>
+            <div class="card__body card__body--back">
+              <h2 class="card__title">Tech Advisor</h2>
+              <p>~ Luciano</p>
+            </div>
+          </div>
+        </article>
 
-                    </div>
-                    <div class="card__body card__body--back">
-                        <h2 class="card__title">Creative Designer</h2>
-                        <p>~ Mamady Conde</p>
-                    </div>
-                </div>
-            </article>
+        <article class="card card4">
+          <div class="card__inner">
+            <div class="card__body card__body--front">
+              <img width="200px" src="./images/Teams/mamady.png" alt="">
 
-        </div>
-    </div>
-    
-    </section>
+            </div>
+            <div class="card__body card__body--back">
+              <h2 class="card__title">Creative Designer</h2>
+              <p>~ Mamady Conde</p>
+            </div>
+          </div>
+        </article>
 
-    <!-- contact-section -->
-
-    <section class="Contact">
-      <div class = "sc-title  ">
-          <h3>Contact<span > Us</span></h3>
-          <div class="line "></div>
       </div>
-     <div class="main-div" >
+    </div>
 
-         <div class="contact-part">
-             <div class="icon-part">
-                 <div class="icon-div">
-                     <i class="fa-solid fa-phone"></i>
-                 <!-- <h3>Call Us </h3> -->
-                 <p>************</p>
+  </section>
 
-             </div>
-             <div class="icon-div">
-                 <i class="fa-solid fa-location-dot"></i>
-                 <!-- <h3>Office</h3> -->
-                 <p>Jaipur,Rajasthan</p>
+  <!-- contact-section -->
 
-             </div>
-             <div class="icon-div">
-                 <i class="fa-solid fa-envelope"></i>
-                 <!-- <h3>Email</h3> -->
-                 <p>Mohammed@axsweb3.com </p>
-                 
-             </div>
-             <!-- <div class="icon-div">
+  <section class="Contact">
+    <div class="sc-title  ">
+      <h3>Contact<span> Us</span></h3>
+      <div class="line "></div>
+    </div>
+    <div class="main-div">
+
+      <div class="contact-part">
+        <div class="icon-part">
+          <div class="icon-div">
+            <i class="fa-solid fa-phone"></i>
+            <!-- <h3>Call Us </h3> -->
+            <p>************</p>
+
+          </div>
+          <div class="icon-div">
+            <i class="fa-solid fa-location-dot"></i>
+            <!-- <h3>Office</h3> -->
+            <p>Jaipur,Rajasthan</p>
+
+          </div>
+          <div class="icon-div">
+            <i class="fa-solid fa-envelope"></i>
+            <!-- <h3>Email</h3> -->
+            <p>Mohammed@axsweb3.com </p>
+
+          </div>
+          <!-- <div class="icon-div">
                  <i class="fa-solid fa-earth-americas"></i>
                  <h3>Website</h3>
                  <p>xxxxxxxxxxx</p>
                  
              </div> -->
-         </div>
-
-         <div class="contact-form">
-             <div class="name-email-div">
-                 
-                 <!-- <label for="name"></label> -->
-                 <input type="text" name="name" id="name" placeholder="Enter Full Name " >
-                 <input type="email" name="email" id="email" placeholder="Enter Email">
-             </div>
-             <!-- <input type="text" name="number" id="number" placeholder="Enter Phone Number"> -->
-             <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject">
-             <input type="text" name="message" id="message" placeholder="Enter Message" class="message">
-             <a href="#"><div class="btn" >
-                 Send Message
-                 </div></a>
-                 
-         </div>
-     </div>
-      </div>
-      
-     </section>
-
-     <!-- about section  -->
-
-     <div class="about-us transition-fade" >
-      <!-- <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div> -->
-     
-        <!-- <img src="./rocket.png" class="rocket" alt="" /> -->
-      
-        <div class="main-about">
-          <div class="text">
-            <h3 class="heading">ABOUT US</h3>
-            <p class="content">
-              Navigate the world of web3 can be daunting, AXS offers tailored
-              solutions to meet each client's specific needs, budget, and goals.
-              Our goal is to make the process as seamless and successful as
-              possible. By partnering with AXS, clients can tap into AXS’s team
-              of extensive knowledge and expertise in web3 to create a strong
-              web3 presence that sets you apart from the competition.
-            </p>
-            <div class="button">
-              Our Vision ANd Mission
-          
-                <div class="button1">
-                  <div class="button2">
-          
-                    <div onclick=" visionCome()"><button class="herobutton">
-                      <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                          class="bi bi-arrow-right" viewBox="0 0 16 16">
-                          <path fill-rule="evenodd"
-                            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg></div>
-                    </button></div>
-                  </div>
-                </div>
-              </div>
-          </div>
         </div>
-     
-   
-      
-        <!-- <div id="three-container"></div> -->
-      </div>
 
-      <!-- Vision Misiion section -->
-      <div class="canvas-wrapper">
-        <a href="#" class="canvas">
-            <div class="canvas_border">
-                <svg>
-                    <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
-                    <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                </svg>
+        <div class="contact-form">
+          <div class="name-email-div">
+
+            <!-- <label for="name"></label> -->
+            <input type="text" name="name" id="name" placeholder="Enter Full Name ">
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+          </div>
+          <!-- <input type="text" name="number" id="number" placeholder="Enter Phone Number"> -->
+          <input type="text" name="subject" id="subject" placeholder="Enter Mail Subject">
+          <input type="text" name="message" id="message" placeholder="Enter Message" class="message">
+          <a href="#">
+            <div class="btn">
+              Send Message
             </div>
-            <div class="canvas_img-wrapper">
-                <!-- <img class="canvas_img" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt=""> -->
-                <h2>Vision</h2>
-                <p class="canvas_img">
-                    Help brands navigate the complex and fast-moving Web3 space, and to create successful projects that benefit both the brands and the Web3 community.
-                </p>
-            </div>
-            <div class="canvas_copy canvas_copy--left">
-                <span class="canvas_copy_subtitle">AXS</span>
-                <strong class="canvas_copy_title">OUR</strong>
-                <strong class="canvas_copy_title">VISION</strong>
-                <!-- <span class="canvas_copy_details">Details and stuff</span> -->
-            </div>
-        </a>
-        <a href="#" class="canvas">
-            <div class="canvas_border">
-                <svg>
-                    <defs><linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop><stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop></linearGradient><linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#D34F48"></stop><stop offset="100%" stop-color="#772522"></stop></linearGradient></defs>
-                    <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square" stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
-                </svg>
-            </div>
-            <div class="canvas_img-wrapper">
-                <!-- <img class="canvas_img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/249772/Twitter_Logo_Blue.png" alt=""> -->
-                <h2>Mission</h2>
-                <p class="canvas_img">
-                    Adapt quickly in the fast-moving Web3 space and provide customized advice to our clients.                </p>
-            </div>
-            <div class="canvas_copy">
-                <span class="canvas_copy_subtitle">AXS</span>
-                <strong class="canvas_copy_title">OUR</strong>
-                <strong class="canvas_copy_title">MISSION</strong>
-                <!-- <span class="canvas_copy_details">Details and stuff</span> -->
-            </div>
-        </a>
+          </a>
+
+        </div>
+      </div>
     </div>
 
-    
-      
-    <!-- audio part -->
-    <audio id="volume" autoplay loop style="z-index: 99999">
-      <source src="wandering-6394.mp3" type="audio/mpeg" />
-    </audio>
+  </section>
+
+  <!-- about section  -->
+
+  <div class="about-us transition-fade">
+    <!-- <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div> -->
+
+    <!-- <img src="./rocket.png" class="rocket" alt="" /> -->
+
+    <div class="main-about">
+      <div class="text">
+        <h3 class="heading">ABOUT US</h3>
+        <p class="content">
+          Navigate the world of web3 can be daunting, AXS offers tailored
+          solutions to meet each client's specific needs, budget, and goals.
+          Our goal is to make the process as seamless and successful as
+          possible. By partnering with AXS, clients can tap into AXS’s team
+          of extensive knowledge and expertise in web3 to create a strong
+          web3 presence that sets you apart from the competition.
+        </p>
+        <div class="button">
+          Our Vision ANd Mission
+
+          <div class="button1">
+            <div class="button2">
+
+              <div onclick=" visionCome()"><button class="herobutton">
+                  <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg></div>
+                </button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 
-    <script>
-      let vol = document.getElementById("volume");
-      vol.volume = 0.5;
-    </script>
+    <!-- <div id="three-container"></div> -->
+  </div>
 
-    <script src="Js/Home-to-Nav.js"></script>
-    <script src="Js/client.js"></script>
-    <script src="Js/team.js"></script>
-    <script type="module" src="Js/Galxy.js"></script>
-   
-  </body>
+  <!-- Vision Misiion section -->
+  <div class="canvas-wrapper">
+    <a href="#" class="canvas">
+      <div class="canvas_border">
+        <svg>
+          <defs>
+            <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop>
+              <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
+            </linearGradient>
+            <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#D34F48"></stop>
+              <stop offset="100%" stop-color="#772522"></stop>
+            </linearGradient>
+          </defs>
+          <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square"
+            stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+        </svg>
+      </div>
+      <div class="canvas_img-wrapper">
+        <!-- <img class="canvas_img" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt=""> -->
+        <h2>Vision</h2>
+        <p class="canvas_img">
+          Help brands navigate the complex and fast-moving Web3 space, and to create successful projects that benefit
+          both the brands and the Web3 community.
+        </p>
+      </div>
+      <div class="canvas_copy canvas_copy--left">
+        <span class="canvas_copy_subtitle">AXS</span>
+        <strong class="canvas_copy_title">OUR</strong>
+        <strong class="canvas_copy_title">VISION</strong>
+        <!-- <span class="canvas_copy_details">Details and stuff</span> -->
+      </div>
+    </a>
+    <a href="#" class="canvas">
+      <div class="canvas_border">
+        <svg>
+          <defs>
+            <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(253,137,68);stop-opacity:1"></stop>
+              <stop offset="100%" style="stop-color:rgb(153,75,23);stop-opacity:1"></stop>
+            </linearGradient>
+            <linearGradient id="grad-red" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#D34F48"></stop>
+              <stop offset="100%" stop-color="#772522"></stop>
+            </linearGradient>
+          </defs>
+          <rect id="rect-grad" class="rect-gradient" fill="none" stroke="url(#grad-orange)" stroke-linecap="square"
+            stroke-width="4" stroke-miterlimit="30" width="100%" height="100%"></rect>
+        </svg>
+      </div>
+      <div class="canvas_img-wrapper">
+        <!-- <img class="canvas_img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/249772/Twitter_Logo_Blue.png" alt=""> -->
+        <h2>Mission</h2>
+        <p class="canvas_img">
+          Adapt quickly in the fast-moving Web3 space and provide customized advice to our clients. </p>
+      </div>
+      <div class="canvas_copy">
+        <span class="canvas_copy_subtitle">AXS</span>
+        <strong class="canvas_copy_title">OUR</strong>
+        <strong class="canvas_copy_title">MISSION</strong>
+        <!-- <span class="canvas_copy_details">Details and stuff</span> -->
+      </div>
+    </a>
+  </div>
+
+
+
+  <!-- audio part -->
+  <audio id="volume" autoplay loop style="z-index: 99999">
+    <source src="wandering-6394.mp3" type="audio/mpeg" />
+  </audio>
+
+
+
+  <script>
+    let vol = document.getElementById("volume");
+    vol.volume = 0.2;
+  </script>
+
+  <script src="Js/Home-to-Nav.js"></script>
+  <script src="Js/client.js"></script>
+  <script src="Js/team.js"></script>
+  <script type="module" src="Js/Galxy.js"></script>
+
+</body>
+
 </html>

@@ -321,7 +321,52 @@ button.herobutton.ab:hover{
 }
 
 #audio-toggle:hover{
-  background-color: rgb(70, 69, 69);
+  background-color: rgb(255, 255, 255);
   font-weight: 400;
-  border-color: black;
+  border: none;
+  color: #be75fd;
+}
+
+.circle {
+  position: absolute;
+  z-index: 9999999;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  background: #666666;
+  border-radius: 80%;
+  opacity: 0.6;
+  backface-visibility: hidden;
+}
+:root {
+  /* cursor: none; */
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,.95) 100%
+  )
+}
+
+.ov2{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 9999;
 }
