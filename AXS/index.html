@@ -272,6 +272,20 @@
     <div class="firefly"></div>
     <div class="firefly"></div>
 
+
+    <div class="audio-button">
+      <button id="audio-toggle" onclick="toggleButton()">
+        AUDIO
+      </button>
+    </div>
+
+    <script>
+      function toggleButton(){
+        var audioButton = document.getElementById("volume");
+        audioButton.classList.add("muted")
+      }
+    </script>
+
     <div class="button-bar">
 
       <div>
@@ -849,11 +863,14 @@
         </a>
     </div>
 
+    
       
     <!-- audio part -->
     <audio id="volume" autoplay loop style="z-index: 99999">
       <source src="wandering-6394.mp3" type="audio/mpeg" />
     </audio>
+
+
 
     <script>
       let vol = document.getElementById("volume");

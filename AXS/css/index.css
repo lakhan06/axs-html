@@ -301,3 +301,27 @@ button.herobutton.ab:hover{
   border: none;
 }
 
+.audio-button{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+}
+
+#audio-toggle{
+  padding: 8px 14px;
+  background-color: transparent;
+  border: 1px solid #be75fd;
+  color: rgb(164, 164, 164);
+  text-transform: capitalize;
+  border-radius: 50px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+#audio-toggle:hover{
+  background-color: rgb(70, 69, 69);
+  font-weight: 400;
+  border-color: black;
+}
