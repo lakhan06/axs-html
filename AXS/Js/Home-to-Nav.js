@@ -86,16 +86,16 @@ function galaxyhide() {
 
 //-------------- galxy to client part--------------------
 function clientCome() {
-  particles.style.setProperty("opacity", "1");
-  particles.style.setProperty("transform", "translateY(0)");
+  // particles.style.setProperty("opacity", "1");
+  // particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "1");
   clientMain.style.setProperty("transform", "scale(1)");
   clientMain.style.setProperty("opacity", "1");
   buttonbar.style.setProperty("opacity", "1");
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "none");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "none");
+  // });
 
   homebutton.classList.remove("transform-origin-buttons");
   homebutton.classList.add("transform-up-buttons");
@@ -116,8 +116,8 @@ function clientCome() {
   team.classList.add("transform-up-buttons");
 }
 function clientGo() {
-  particles.style.setProperty("opacity", "0");
-  particles.style.setProperty("transform", "translateY(100%)");
+  // particles.style.setProperty("opacity", "0");
+  // particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // clientMain.style.setProperty("transform", "translateX(100%)");
   clientMain.style.setProperty("transform", "scale(0)");
@@ -125,9 +125,9 @@ function clientGo() {
   viewclient.style.setProperty("opacity", "0");
   buttonbar.style.setProperty("opacity", "0");
 
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "block");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "block");
+  // });
 
   homebutton.classList.add("transform-origin-buttons");
   homebutton.classList.remove("transform-up-buttons");
@@ -150,8 +150,8 @@ function clientGo() {
 
 // ----------galaxy to team part--------------------
 function teamCome() {
-  particles.style.setProperty("opacity", "1");
-  particles.style.setProperty("transform", "translateY(0)");
+  // particles.style.setProperty("opacity", "1");
+  // particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "1");
   // teamSection.style.setProperty("transform", "translateX(0)");
@@ -159,9 +159,9 @@ function teamCome() {
   teamSection.style.setProperty("opacity", "1");
   buttonbar.style.setProperty("opacity", "1");
 
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "none");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "none");
+  // });
 
   homebutton.classList.remove("transform-origin-buttons");
   homebutton.classList.add("transform-up-buttons");
@@ -183,17 +183,17 @@ function teamCome() {
 }
 
 function teamGo() {
-  particles.style.setProperty("opacity", "0");
-  particles.style.setProperty("transform", "translateY(100%)");
+  // particles.style.setProperty("opacity", "0");
+  // particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // teamSection.style.setProperty("transform", "translateX(100%)");
   teamSection.style.setProperty("transform", "scale(0)");
   teamSection.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "0");
   buttonbar.style.setProperty("opacity", "0");
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "none");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "none");
+  // });
 
   homebutton.classList.add("transform-origin-buttons");
   homebutton.classList.remove("transform-up-buttons");
@@ -215,8 +215,8 @@ function teamGo() {
 }
 // ----------galaxy to Contact part--------------------
 function contactCome() {
-  particles.style.setProperty("opacity", "1");
-  particles.style.setProperty("transform", "translateY(0)");
+  // particles.style.setProperty("opacity", "1");
+  // particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewcontact.style.setProperty("opacity", "1");
   // ContactSection.style.setProperty("transform", "translateX(0)");
@@ -225,9 +225,9 @@ function contactCome() {
 
   buttonbar.style.setProperty("opacity", "1");
 
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "none");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "none");
+  // });
 
   homebutton.classList.remove("transform-origin-buttons");
   homebutton.classList.add("transform-up-buttons");
@@ -249,17 +249,17 @@ function contactCome() {
 }
 
 function contactGo() {
-  particles.style.setProperty("opacity", "0");
-  particles.style.setProperty("transform", "translateY(100%)");
+  // particles.style.setProperty("opacity", "0");
+  // particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // ContactSection.style.setProperty("transform", "translateX(100%)");
   ContactSection.style.setProperty("transform", "scale(0)");
   ContactSection.style.setProperty("opacity", "0");
   viewcontact.style.setProperty("opacity", "0");
   buttonbar.style.setProperty("opacity", "0");
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "block");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "block");
+  // });
 
   homebutton.classList.add("transform-origin-buttons");
   homebutton.classList.remove("transform-up-buttons");
@@ -281,8 +281,8 @@ function contactGo() {
 }
 // ----------galaxy to about part--------------------
 function aboutCome() {
-  particles.style.setProperty("opacity", "1");
-  particles.style.setProperty("transform", "translateY(0)");
+  // particles.style.setProperty("opacity", "1");
+  // particles.style.setProperty("transform", "translateY(0)");
   canvas.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "1");
   buttonbar.style.setProperty("opacity", "1");
@@ -291,9 +291,9 @@ function aboutCome() {
   aboutusSection.style.setProperty("transform", "scale(1)");
   aboutusSection.style.setProperty("opacity", "1");
 
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "none");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "none");
+  // });
 
   homebutton.classList.remove("transform-origin-buttons");
   homebutton.classList.add("transform-up-buttons");
@@ -315,17 +315,17 @@ function aboutCome() {
 }
 
 function aboutGo() {
-  particles.style.setProperty("opacity", "0");
-  particles.style.setProperty("transform", "translateY(100%)");
+  // particles.style.setProperty("opacity", "0");
+  // particles.style.setProperty("transform", "translateY(100%)");
   canvas.style.setProperty("opacity", "1");
   // aboutusSection.style.setProperty("transform", "translateX(100%)");
   aboutusSection.style.setProperty("transform", "scale(0)");
   aboutusSection.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "0");
-  buttonbar.style.setProperty("opacity", "0");
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "block");
-  });
+  // buttonbar.style.setProperty("opacity", "0");
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "block");
+  // });
 
   homebutton.classList.add("transform-origin-buttons");
   homebutton.classList.remove("transform-up-buttons");
@@ -360,8 +360,8 @@ function visionCome() {
   viewvision.style.setProperty("opacity", "1");
 }
 function visionGo() {
-  particles.style.setProperty("opacity", "0");
-  particles.style.setProperty("transform", "translateY(100%)");
+  // particles.style.setProperty("opacity", "0");
+  // particles.style.setProperty("transform", "translateY(100%)");
   // aboutusSection.style.setProperty("transform", "translateX(100%)");
   canvas.style.setProperty("opacity", "1");
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -369,9 +369,9 @@ function visionGo() {
   visionSection.style.setProperty("opacity", "0");
   viewvision.style.setProperty("opacity", "0");
   buttonbar.style.setProperty("opacity", "0");
-  firefly.forEach((element) => {
-    element.style.setProperty("display", "block");
-  });
+  // firefly.forEach((element) => {
+  //   element.style.setProperty("display", "block");
+  // });
 
   homebutton.classList.add("transform-origin-buttons");
   homebutton.classList.remove("transform-up-buttons");
@@ -399,6 +399,11 @@ function homeComeFromBar() {
   // ContactSection.style.setProperty("transform", "translateX(100%)");
   // clientMain.style.setProperty("transform", "translateX(100%)");
   // teamSection.style.setProperty("transform", "translateX(100%)");
+  firefly.forEach((element) => {
+    element.style.setProperty("display", "none");
+  });
+  particles.style.setProperty("transform", "translateY(0)");
+  particles.style.setProperty("opacity", "1");
 
   clientMain.style.setProperty("transform", "scale(0)");
   clientMain.style.setProperty("opacity", "0");
