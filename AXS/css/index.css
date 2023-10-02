@@ -14,7 +14,10 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  
+  -webkit-user-select: none;
+     -moz-user-select: -moz-none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .Hero-section {
@@ -328,9 +331,9 @@ button.herobutton.ab:hover{
 }
 
 
-/* :root { */
+:root {
   /* cursor: none; */
-  /* --cursorX: 50vw;
+  --cursorX: 50vw;
   --cursorY: 50vh;
 }
 :root:before {
@@ -342,11 +345,11 @@ button.herobutton.ab:hover{
   pointer-events: none;
   background: radial-gradient(
     circle 10vmax at var(--cursorX) var(--cursorY),
-    rgba(0,0,0,0) 0%,
-    rgba(0,0,0,.5) 80%,
-    rgba(0,0,0,.95) 100%
+    rgba(45, 45, 45, 0) 0%,
+    rgba(64, 64, 64, 0.5) 80%,
+    rgba(54, 54, 54, 0.95) 100%
   )
-} */
+}
 
 /* .ov2{
   width: 100vw;

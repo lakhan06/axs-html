@@ -244,6 +244,17 @@
   <div class="firefly"></div>
   <div class="firefly"></div>
 
+   <!-- audio part -->
+   <audio id="volume" autoplay loop style="z-index: 99999">
+    <source src="wandering-6394.mp3" type="audio/mpeg" />
+  </audio>
+
+
+
+  <script>
+    let vol = document.getElementById("volume");
+    vol.volume = 0.4;
+  </script>
 
   <div class="audio-button">
     <button id="audio-toggle" onclick="toggleButton()">
@@ -837,17 +848,7 @@
 
 
 
-  <!-- audio part -->
-  <audio id="volume" autoplay loop style="z-index: 99999">
-    <source src="wandering-6394.mp3" type="audio/mpeg" />
-  </audio>
-
-
-
-  <script>
-    let vol = document.getElementById("volume");
-    vol.volume = 0.4;
-  </script>
+ 
 
   <script src="Js/Home-to-Nav.js"></script>
   <script src="Js/client.js"></script>
