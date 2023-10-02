@@ -327,22 +327,10 @@ button.herobutton.ab:hover{
   color: #be75fd;
 }
 
-.circle {
-  position: absolute;
-  z-index: 9999999;
-  width: 30px;
-  height: 30px;
-  top: 50%;
-  left: 50%;
-  margin: -50px 0 0 -50px;
-  background: #666666;
-  border-radius: 80%;
-  opacity: 0.6;
-  backface-visibility: hidden;
-}
-:root {
+
+/* :root { */
   /* cursor: none; */
-  --cursorX: 50vw;
+  /* --cursorX: 50vw;
   --cursorY: 50vh;
 }
 :root:before {
@@ -358,7 +346,7 @@ button.herobutton.ab:hover{
     rgba(0,0,0,.5) 80%,
     rgba(0,0,0,.95) 100%
   )
-}
+} */
 
 /* .ov2{
   width: 100vw;
