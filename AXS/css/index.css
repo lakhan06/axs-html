@@ -26,8 +26,12 @@ body {
   height: 100vh;
   z-index: 800;
   /* display: none; */
-  margin-top: 60px;
-  /* transition: all 2s linear; */
+  
+}
+
+.content-home{
+  transition: all 2s ease;
+  width: 60%;
 }
 
 .veiw{
@@ -256,11 +260,43 @@ video {
   position: absolute;
   bottom: 1%;
   left: 32%;
-  z-index: 950;
+  z-index: 1000;
   opacity: 0;
-  transition: all 3s ease;
-  
+  transition: all 3s ease; 
 }
 
+button.herobutton.hb:hover{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
 
+button.herobutton.cb:hover{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
 
+button.herobutton.cob:hover{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
+
+button.herobutton.tb:hover{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
+
+button.herobutton.sb:hover{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
+
+button.herobutton.ab:hover{
+  color: white;
+  box-shadow: 0 5px 15px #afe0f5;
+  border: none;
+}
