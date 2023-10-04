@@ -1,4 +1,6 @@
 let canvas = document.querySelector("#canvas");
+let threecontainer = document.querySelector("#three-container");
+
 
 let particles = document.querySelector("#particles-js");
 let HeroSection = document.querySelector(".Hero-section");
@@ -290,6 +292,8 @@ function aboutCome() {
   // aboutusSection.style.setProperty("transform", "translateX(0)");
   aboutusSection.style.setProperty("transform", "scale(1)");
   aboutusSection.style.setProperty("opacity", "1");
+ threecontainer.style.setProperty("transform", "scale(1)");
+ threecontainer.style.setProperty("opacity", "1");
 
   // firefly.forEach((element) => {
   //   element.style.setProperty("display", "none");
@@ -321,8 +325,10 @@ function aboutGo() {
   // aboutusSection.style.setProperty("transform", "translateX(100%)");
   aboutusSection.style.setProperty("transform", "scale(0)");
   aboutusSection.style.setProperty("opacity", "0");
+  threecontainer.style.setProperty("transform", "scale(-10)");
+ threecontainer.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "0");
-  // buttonbar.style.setProperty("opacity", "0");
+  buttonbar.style.setProperty("opacity", "0");
   // firefly.forEach((element) => {
   //   element.style.setProperty("display", "block");
   // });
@@ -358,6 +364,8 @@ function visionCome() {
   visionSection.style.setProperty("opacity", "1");
   viewabout.style.setProperty("opacity", "0");
   viewvision.style.setProperty("opacity", "1");
+  threecontainer.style.setProperty("transform", "scale(-10)");
+  threecontainer.style.setProperty("opacity", "0");
 }
 function visionGo() {
   // particles.style.setProperty("opacity", "0");
@@ -429,6 +437,9 @@ function homeComeFromBar() {
   viewcontact.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "0");
+
+  threecontainer.style.setProperty("transform", "scale(-10)");
+  threecontainer.style.setProperty("opacity", "0");
 }
 function AboutComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -451,12 +462,16 @@ function AboutComeFromBar() {
   visionSection.style.setProperty("transform", "scale(0)");
   visionSection.style.setProperty("opacity", "0");
   buttonbar.style.setProperty("opacity", "1");
-
+  
   viewvision.style.setProperty("opacity", "0");
   viewabout.style.setProperty("opacity", "1");
   viewcontact.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "0");
+
+
+  threecontainer.style.setProperty("transform", "scale(1)");
+  threecontainer.style.setProperty("opacity", "1");
 }
 function clientComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -486,6 +501,9 @@ function clientComeFromBar() {
   viewcontact.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "1");
   viewteam.style.setProperty("opacity", "0");
+
+  threecontainer.style.setProperty("transform", "scale(-10)");
+  threecontainer.style.setProperty("opacity", "0");
 }
 function teamComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -515,6 +533,9 @@ function teamComeFromBar() {
   viewcontact.style.setProperty("opacity", "0");
   viewclient.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "1");
+
+  threecontainer.style.setProperty("transform", "scale(-10)");
+  threecontainer.style.setProperty("opacity", "0");
 }
 function contactComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -542,4 +563,7 @@ function contactComeFromBar() {
   viewcontact.style.setProperty("opacity", "1");
   viewclient.style.setProperty("opacity", "0");
   viewteam.style.setProperty("opacity", "0");
+
+  threecontainer.style.setProperty("transform", "scale(-10)");
+  threecontainer.style.setProperty("opacity", "0");
 }

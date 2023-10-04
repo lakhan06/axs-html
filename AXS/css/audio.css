@@ -1,0 +1,38 @@
+.circle{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+   display: flex;
+  
+}
+.audio-button{
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99999;
+  }
+  
+  #audio-toggle{
+    padding: 8px 20px;
+    background-color: transparent;
+    border: 1px solid #be75fd;
+    color: rgb(164, 164, 164);
+    text-transform: capitalize;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    align-items: center;
+  }
+  
+  #audio-toggle:hover{
+    background-color: rgb(255, 255, 255);
+    font-weight: 400;
+    border: none;
+    color: #be75fd;
+  }
