@@ -265,7 +265,8 @@ video {
   left: 32%;
   z-index: 1000;
   opacity: 0;
-  transition: all 3s ease; 
+  transform: translateY(100%);
+  transition: all 2s ease; 
 }
 
 button.herobutton.hb:hover{
