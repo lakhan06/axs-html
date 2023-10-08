@@ -27,8 +27,13 @@ let visionSection = document.querySelector(".canvas-wrapper");
 
 let aboutlink = document.querySelector(".about-link");
 
+
+
+
 function galaxyVisible() {
+
   canvas.style.setProperty("display", "block");
+  canvas.style.setProperty("transform", "scale(1)");
   canvas.style.setProperty("opacity", "1");
   particles.style.setProperty("transform", "translateY(100%)");
   particles.style.setProperty("opacity", "0");
@@ -58,7 +63,10 @@ function galaxyVisible() {
 }
 
 function galaxyhide() {
+  
   canvas.style.setProperty("opacity", "0");
+  canvas.style.setProperty("transform", "scale(0)");  
+
   particles.style.setProperty("opacity", "1");
   particles.style.setProperty("transform", "translateY(0)");
   content.classList.remove("transform-down");
