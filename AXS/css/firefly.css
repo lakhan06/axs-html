@@ -20,6 +20,7 @@ body {
   margin: -0.2vw 0 0 9.8vw;
   animation: ease 200s alternate infinite;
   pointer-events: none;
+  display: none;
 }
 .firefly::before, .firefly::after {
   content: "";
