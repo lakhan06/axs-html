@@ -1,7 +1,7 @@
-const card1 = document.querySelector(".card1");
-const card2 = document.querySelector(".card2");
-const card3 = document.querySelector(".card3");
-const card4 = document.querySelector(".card4");
+const cd1 = document.querySelector(".cd1");
+const cd2 = document.querySelector(".cd2");
+const cd3 = document.querySelector(".cd3");
+const cd4 = document.querySelector(".cd4");
 
 const i1 = document.querySelector(".i1");
 const i2 = document.querySelector(".i2");
@@ -10,20 +10,19 @@ const i4 = document.querySelector(".i4");
 
 const crosses = document.querySelectorAll(".cross");
 
-
-card1.addEventListener("click", function () {
+cd1.addEventListener("click", function () {
     i1.classList.add("visible");
 });
 
-card2.addEventListener("click", function () {
+cd2.addEventListener("click", function () {
     i2.classList.add("visible");
 });
 
-card3.addEventListener("click", function () {
+cd3.addEventListener("click", function () {
     i3.classList.add("visible");
 });
 
-card4.addEventListener("click", function () {
+cd4.addEventListener("click", function () {
     i4.classList.add("visible");
 });
 
