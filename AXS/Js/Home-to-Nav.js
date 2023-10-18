@@ -1,7 +1,7 @@
 let canvas = document.querySelector("#canvas");
 let threecontainer = document.querySelector("#three-container");
 
-
+let video=document.querySelector("#vid")
 let particles = document.querySelector("#particles-js");
 let HeroSection = document.querySelector(".Hero-section");
 let homebutton = document.querySelector(".home");
@@ -32,6 +32,7 @@ let aboutlink = document.querySelector(".about-link");
 
 function galaxyVisible() {
 
+  // video.style.setProperty("display", "none");
   canvas.style.setProperty("display", "block");
   canvas.style.setProperty("transform", "scale(1)");
   canvas.style.setProperty("opacity", "1");

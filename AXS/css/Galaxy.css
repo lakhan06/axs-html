@@ -168,3 +168,104 @@ filter: brightness(4);
   justify-content: center;
   align-items: center;
 }
+
+@media  (max-width:800px) {
+  .herobutton {
+    width:40px;
+    height: 40px;
+    
+    }
+    
+  
+    
+    
+    
+    .herobutton i{
+    font-size: 15px;
+    }
+    .herobutton img{
+    width: 30px;
+    }
+   
+  .home{
+    position: absolute;
+    top: 22%;
+    left: 42%;
+     transition: all 2000ms ease;
+     z-index: 5;
+    transition:  transform  2s ease;
+  }
+  .home:hover .hm{
+    color: white;
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+  }
+  .abt{
+    position: absolute;
+    top: 31%;
+    left: 18%;
+    z-index: 999;
+    transition: all 2000ms ease;
+  }
+  .abt:hover .at{
+    color: white;
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+  }
+  .client{
+    position: absolute;
+    top: 61%;
+    left: 18%;
+    transition: all 2000ms ease;
+    z-index: 999;
+  }
+  .client:hover .cl{
+    color: white;
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+  }
+  .service{
+    position: absolute;
+    top: 68%;
+    left: 42%;
+    z-index: 999;
+    transition: all 2000ms ease;
+  }
+  .service:hover .sr{
+    color: white;
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+  }
+  .team{
+    position: absolute;
+    top: 58%;
+    left: 67%;
+    z-index: 999;
+    transition: all 2000ms ease;
+  }
+  .team:hover .tm{
+    color: white;
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+  }
+  .contact{
+    position: absolute;
+    top: 31%;
+    left: 67%;
+    transition: all 2000ms ease;
+    z-index: 1;
+  }
+  .contact:hover .ct{
+    color: white;
+    box-shadow: 0 5px 15px #afe0f5;
+    border: none;
+  }
+  .buttons p{
+    font-size: 10px;
+    color: white;
+    font-family: 'poppins';
+    transition: 0.5s ease-in-out;
+  }
+ 
+  
+}
