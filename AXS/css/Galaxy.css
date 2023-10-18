@@ -46,12 +46,12 @@ transition: all 0.5s ease-in-out;
  
 }
 .transform-up-buttons{
-  transform: translateY(-700px);
+  transform: translateY(-2000px);
   
 
 }
 .transform-down{
-  transform: translateY(700px);
+  transform: translateY(2000px);
   opacity: 0;
   
 

@@ -8,6 +8,10 @@
   /* overflow: hidden; */
 }
 
+html{
+  overflow: hidden;
+}
+
 body {
   position: absolute;
   top: 0;
@@ -37,6 +41,10 @@ body {
 .content-home{
   transition: all 2s ease;
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .veiw{
@@ -103,11 +111,12 @@ body {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  width: 80vw;
-  line-height: 64px;
+  /* width: 80vw; */
+  /* line-height: px; */
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .tagline2 {
@@ -127,7 +136,7 @@ body {
   font-size: 14px;
   color: rgb(214, 212, 212);
 
-  width: 64vw;
+  /* width: 64vw; */
 
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -150,8 +159,8 @@ video {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
-  width: 340px;
-  gap: 10px;
+  /* width: 340px; */
+  /* gap: 10px; */
   margin-top: 20px;
   font-size: 15px;
   text-transform: uppercase;
@@ -186,6 +195,10 @@ video {
 .homebutton .icon{
   margin-top: 5px;
   transition: all 0.4s ease-in-out;
+  
+}
+.icon svg{
+  width: 20px;
 }
 
 .homebutton:hover .icon{
@@ -201,14 +214,47 @@ video {
   color: white;
   border: 2px solid #e500e5;
   border-radius: 50%;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   z-index: 999;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: white; */
-  margin: 20px;
+ .button-home {
+   
+    font-size: 10px;
+    
+  }
+  .homebutton {
+    width: 15px;
+    height: 15px;
+
+  }
+  
+  
+  
+  .homebutton .icon{
+    margin-top: 5px;
+    transition: all 0.4s ease-in-out;
+  }
+  .icon svg{
+    width: 10px;
+  }
+  
+  .homebutton:hover .icon{
+    transform: translate(4px);
+    color: rgb(214, 172, 255);
+  }
+  
+  .button1 {
+    width: 34px;
+    height: 34px;
+    padding: 1px;
+    
+    border: 1px solid #e500e5;
+   
+  }
 }
 
 .content-home{
@@ -220,20 +266,6 @@ video {
   flex-direction: column;
 }
 
-.button2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 47px;
-  height: 47px;
-  padding: 2px;
-  background-color: transparent;
-  color: white;
-  border: 0.3px solid #f3bcf0f9;
-  border-radius: 50%;
-  z-index: 999;
-  cursor: pointer;
-}
 
 #particles-js {
   position: absolute;
@@ -309,7 +341,6 @@ button.herobutton.ab:hover{
 }
 
 
-
 /*  */
 
 /* .ov2{
@@ -323,3 +354,125 @@ button.herobutton.ab:hover{
   z-index: 9999;
 } */
 
+
+@media  (max-width: 1000px){
+ .tagline{
+
+   font-size : 34px;
+  }
+  #sub {
+    font-size: 15px;
+    
+  }
+  .detail{
+    font-size: 12px;
+  }
+  .button-home {
+   
+    font-size: 10px;
+    
+  }
+  .homebutton {
+    width: 15px;
+    height: 15px;
+
+  }
+  
+  
+  
+  .homebutton .icon{
+    margin-top: 5px;
+    transition: all 0.4s ease-in-out;
+  }
+  .icon svg{
+    width: 10px;
+  }
+  
+  .homebutton:hover .icon{
+    transform: translate(4px);
+    color: rgb(214, 172, 255);
+  }
+  
+  .button1 {
+    width: 34px;
+    height: 34px;
+    padding: 1px;
+    
+    border: 1px solid #e500e5;
+   
+  }
+  
+ 
+ 
+  }
+
+@media  (max-width: 600px){
+ .tagline{
+
+   font-size : 20px;
+  }
+  #sub {
+    font-size: 10px;
+    
+  }
+  .detail{
+    font-size: 8px;
+  }
+  
+ 
+  }
+@media  (max-width: 400px){
+ .tagline{
+
+   font-size : 15px;
+  }
+  #sub {
+    font-size: 8px;
+    
+  }
+  .detail{
+    font-size: 6px;
+  }
+  .button-home {
+   
+    font-size: 6px;
+    /* margin: 15px; */
+    /* gap: 10px; */
+    
+  }
+  .homebutton {
+    width: 15px;
+    height: 15px;
+
+  }
+  
+  
+  
+  .homebutton .icon{
+    margin-top: 5px;
+    transition: all 0.4s ease-in-out;
+  }
+  .icon svg{
+    width: 10px;
+  }
+  
+  .homebutton:hover .icon{
+    transform: translate(4px);
+    color: rgb(214, 172, 255);
+  }
+  
+  .button1 {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+    
+    border: 1px solid #e500e5;
+    margin: 10px;
+   
+  }
+  
+  
+  
+  
+ 
+  }
