@@ -160,7 +160,7 @@ video {
   /* justify-content: space-around; */
   align-items: center;
   /* width: 340px; */
-  /* gap: 10px; */
+  gap: 10px;
   margin-top: 20px;
   font-size: 15px;
   text-transform: uppercase;
@@ -221,40 +221,7 @@ video {
   justify-content: center;
   align-items: center;
   /* background-color: white; */
- .button-home {
-   
-    font-size: 10px;
-    
-  }
-  .homebutton {
-    width: 15px;
-    height: 15px;
-
-  }
-  
-  
-  
-  .homebutton .icon{
-    margin-top: 5px;
-    transition: all 0.4s ease-in-out;
-  }
-  .icon svg{
-    width: 10px;
-  }
-  
-  .homebutton:hover .icon{
-    transform: translate(4px);
-    color: rgb(214, 172, 255);
-  }
-  
-  .button1 {
-    width: 34px;
-    height: 34px;
-    padding: 1px;
-    
-    border: 1px solid #e500e5;
-   
-  }
+  margin: 20px;
 }
 
 .content-home{
@@ -358,14 +325,14 @@ button.herobutton.ab:hover{
 @media  (max-width: 1000px){
  .tagline{
 
-   font-size : 34px;
+   font-size : 30px;
   }
   #sub {
     font-size: 15px;
     
   }
   .detail{
-    font-size: 12px;
+    font-size: 10px;
   }
   .button-home {
    
@@ -431,13 +398,12 @@ button.herobutton.ab:hover{
     
   }
   .detail{
-    font-size: 6px;
+    font-size: 7px;
   }
   .button-home {
    
-    font-size: 6px;
+    font-size: 7px;
     /* margin: 15px; */
-    /* gap: 10px; */
     
   }
   .homebutton {
@@ -464,10 +430,10 @@ button.herobutton.ab:hover{
   .button1 {
     width: 30px;
     height: 30px;
-    padding: 0px;
+    padding: 2px;
+    /* padding:  0 2px; */
     
     border: 1px solid #e500e5;
-    margin: 10px;
    
   }
   
