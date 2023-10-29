@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/audio.css">
 
 
-  <!-- <link rel="stylesheet" href="css/Services.css"> -->
+  <link rel="stylesheet" href="css/Services.css">
 
 </head>
 <style>
@@ -101,6 +101,16 @@
   </div>
   <div class="veiw view-vision">
     <button class="veiw-all" onclick="visionGo()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd"
+          d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+      </svg>
+    </button>
+    <p class="veiw-content">VIEW ALL</p>
+  </div>
+  <div class="veiw view-service">
+    <button class="veiw-all" onclick="ServiceGo()">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
         class="bi bi-arrow-left arr-left" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
@@ -330,7 +340,7 @@
       <!-- </div> -->
       <!-- </div> -->
     </div>
-    <div>
+    <div onclick="ServiceComeFromBar() ">
       <!-- <div class="button1"> -->
       <!-- <div class="button2"> -->
 
@@ -436,12 +446,12 @@
         <!-- </div> -->
         <!-- </div> -->
       </div>
-      <a href="Services3.html" class="service transform-up-buttons">
+      <div  class="service transform-up-buttons" onclick="ServiceCome()">
         <button class="herobutton sr">
           <i class="bi bi-sliders"></i>
         </button>
         <p class="text-home">SERVICES</p>
-      </a>
+      </div>
       <div class="team transform-up-buttons" onclick="teamCome()">
         <!-- <div class="button1"> -->
         <!-- <div class="button2"> -->
@@ -698,10 +708,10 @@
   <!-- contact-section -->
 
   <section class="Contact">
-    <div class="sc-title  ">
+    <!-- <div class="sc-title  ">
       <h3>Contact<span> Us</span></h3>
       <div class="line "></div>
-    </div>
+    </div> -->
     <div class="main-div">
 
       <div class="contact-part">
@@ -864,6 +874,65 @@
     </a>
   </div>
 
+<!-- service section -->
+<section class="service-section">
+
+  <div id="large-header" class="large-header">
+    <!-- <canvas id="demo-canvas"></canvas> -->
+  <div id="scene">
+      <div id="left-zone">
+        <ul class="list">
+          <li class="item">
+            <input type="radio" id="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" name="basic_carousel" value="The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)" checked="checked"/>
+            <label class="label_strawberry" for="radio_The garden strawberry (or simply strawberry /ˈstrɔːbᵊri/; Fragaria × ananassa) is a widely grown hybrid species of the genus Fragaria (collectively known as the strawberries)"><i class="bi bi-code-slash"></i>Web3 Consultation</label>
+            <div class="content content_strawberry"> 
+                <i class="bi bi-code-slash"></i>
+              <h1>Web3 Consultation</h1>
+              <p>Our team has a deep understanding of the web3 landscape and can help you identify and capitalize on new opportunities within web3. Whether you're just starting out or looking to expand your business into the web3 space, our team can help you create a roadmap for success.</p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa." name="basic_carousel" value="A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."/>
+            <label class="label_banana" for="radio_A banana is an edible fruit, botanically a berry, produced by several kinds of large herbaceous flowering plants in the genus Musa."><i class="bi bi-bar-chart-fill"></i>Marketing</label>
+            <div class="content content_banana"><i class="bi bi-bar-chart-fill"></i>
+              <h1>Marketing</h1>
+              <p>Our team can help you develop a comprehensive marketing strategy that aligns with your business goals to promote across various platforms, including traditional social media and other web3-specific platforms.Our team can also help create engaging content that effectively communicates your message to your target audience.</p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus." name="basic_carousel" value="The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."/>
+            <label class="label_apple" for="radio_The apple tree (Malus domestica) is a deciduous tree in the rose family best known for its sweet, pomaceous fruit, the apple. It is cultivated worldwide as a fruit tree, and is the most widely grown species in the genus Malus."><i class="bi bi-palette"></i>Art Generation</label>
+            <div class="content content_apple"> <i class="bi bi-palette"></i>
+              <h1>Art Generation</h1>
+              <p>Web3 space offers a unique opportunity for artists and creatives to showcase their work and connect with their audience in new and exciting ways. That's why we offer a range of creative and art services designed to help you realize your vision and stand out in the web3 space.
+              </p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+            <label class="label_orange" for="radio_The orange (specifically, the sweet orange) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><i class="bi bi-people-fill"></i>Community Management</label>
+            <div class="content content_orange"><i class="bi bi-people-fill"></i>
+              <h1>Community Management</h1>
+              <p>Our team has extensive experience in community building and has helped create some of the largest communities in the web3 space, spanning across various platforms such as Discord, Twitter Spaces, and more. Our team can help your project grow by building and maintaining an active web3 community, tailored to your specific vertical and business goals.</p>
+            </div>
+          </li>
+          <li class="item">
+            <input type="radio" id="radio_The tech (specifically, the sweet tech) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae." name="basic_carousel" value="The tech (specifically, the sweet tech) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."/>
+            <label class="label_tech" for="radio_The tech (specifically, the sweet tech) is the fruit of the citrus species Citrus × sinensis in the family Rutaceae."><i class="bi bi-bug-fill"></i>Tech Development </label>
+            <div class="content content_tech"><i class="bi bi-bug-fill"></i>
+              <h1>Tech Development </h1>
+              <p>Whether you need to build a blockchain- based solution, develop a smart contract, or create a decentralized application, our team has the expertise and experience to deliver results. We use the latest tools and technologies to ensure your solution is secure, scalable, and efficient.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="middle-border"></div>
+      <div id="right-zone"></div>
+    </div>
+  </div>
+</section>
+  
 
   <!-- <script src="three.r134.min.js"></script>
   <script src="Js/vanta.waves.min.js"></script>

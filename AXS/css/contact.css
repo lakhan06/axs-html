@@ -258,13 +258,3 @@
     color:#8327C4;
 }
 
-
-#three-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    overflow: hidden;
-    /* color: black; */
-    /* z-index: 1; */
-  }
