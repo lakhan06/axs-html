@@ -106,17 +106,17 @@
     font-size: 36px;
     /* margin-left: 70px; */
     line-height: 40px;
+    margin-bottom: 20px;
 }
 
 .content{
- 
     color: rgb(174, 174, 174);
     /* text-align: justify; */
     font-family: serif;
     /* padding: 10px; */
     font-size: 14px;
     line-height: 30px;
-    width: 40%;
+    width: 60%;
     /* margin-left: 60px; */
     /* margin-top: 20px; */
     /* padding-right: 80px; */
@@ -146,8 +146,8 @@
 }
 
 .button1 {
-  width: 34px;
-  height: 34px;
+  width: 54px;
+  height: 54px;
   padding: 2px;
   background-color: transparent;
   color: white;
@@ -163,7 +163,11 @@
   margin: 20px;
 }
 
-#vision{
+.about-buttons{
+  margin-top: 40px;
+}
+
+.vision{
   border-radius: 10px;
   background-color: black;
   opacity: 70%;
@@ -175,7 +179,7 @@
   cursor: pointer;
   transition: all 2s ease;
 }
-#mission{
+.mission{
   border-radius: 10px;
   background-color: black;
   opacity: 70%;
@@ -219,7 +223,7 @@
 .vision-content{
   position: absolute;
   transform: translateY(2000px);
-  width: 30%;
+  width: 60%;
   font-size: 14px;
   /* display: none; */
   /* transition: all 2s ease; */
@@ -228,7 +232,7 @@
 .mission-content{
   position: absolute;
   transform: translateY(-2000px);
-  width: 30%;
+  width: 60%;
   font-size: 14px;
   /* display: none; */
   /* transition: all 2s ease; */
