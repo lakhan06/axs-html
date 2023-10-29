@@ -161,6 +161,27 @@
   margin: 20px;
 }
 
+#vision{
+  border-radius: 8px;
+  background-color: black;
+  opacity: 70%;
+  padding: 16px 28px;
+  color: white;
+  border: none;
+  margin: 12px;
+  font-size: 14px;
+}
+#mission{
+  border-radius: 8px;
+  background-color: black;
+  opacity: 70%;
+  padding: 16px 28px;
+  color: white;
+  border: none;
+  margin: 24px;
+  font-size: 14px;
+}
+
 @keyframes arrow {
   0%{
     transform: translateX(0);
