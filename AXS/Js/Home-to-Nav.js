@@ -379,6 +379,7 @@ function aboutGo() {
  visionbutton.classList.remove("onclickbutton");
  missionbutton.classList.remove("onclickbutton");
  heading.innerHTML="AXS"
+ heading.style.setProperty("margin", "20px");
 }
 // ----------galaxy to service part--------------------
 function ServiceCome() {
@@ -475,7 +476,7 @@ function visioncome(){
   visionbutton.classList.add("onclickbutton");
   missionbutton.classList.remove("onclickbutton");
   heading.innerHTML="Vision"
- 
+  heading.style.setProperty("margin", "0px");
 
 }
 function missioncome(){
@@ -488,7 +489,7 @@ function missioncome(){
    visionbutton.classList.remove("onclickbutton");
   missionbutton.classList.add("onclickbutton");
   heading.innerHTML="Mission"
- 
+  heading.style.setProperty("margin", "0px");
 
 }
 
@@ -499,6 +500,8 @@ function arrowclick(){
    arrowbutton.style.setProperty("opacity", "0");
    visionbutton.classList.remove("onclickbutton");
   missionbutton.classList.remove("onclickbutton");
+  heading.style.setProperty("margin", "20px");
+
   heading.innerHTML="AXS"
 
 }
