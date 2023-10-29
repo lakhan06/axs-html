@@ -475,6 +475,7 @@ function visioncome(){
   visionbutton.classList.add("onclickbutton");
   missionbutton.classList.remove("onclickbutton");
   heading.innerHTML="Vision"
+  
  
 
 }
