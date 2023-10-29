@@ -162,7 +162,7 @@
 }
 
 #vision{
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: black;
   opacity: 70%;
   padding: 16px 28px;
@@ -172,7 +172,7 @@
   font-size: 14px;
 }
 #mission{
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: black;
   opacity: 70%;
   padding: 16px 28px;
