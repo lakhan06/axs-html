@@ -2,21 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-video {
-  position: absolute;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: -1;
-  /* filter: brightness(60%); */
-}
+
 header {
   width: 100vw;
   height: 20vh;
@@ -362,12 +348,24 @@ label i{
 /* Header */
 .large-header {
   position: relative;
+  
   width: 100%;
+  height: 100vh;
   /* background: #333; */
   overflow: hidden;
   background-size: cover;
   background-position: center center;
   z-index: 1;
+  /* height: 100vh; */
+}
+.service-section{
+  position: fixed;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 2000ms ease;
+  top: 0;
+  left: 0;
+  width: 100vh;
   height: 100vh;
 }
 

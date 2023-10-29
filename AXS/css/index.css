@@ -23,6 +23,7 @@ body {
      -moz-user-select: -moz-none;
       -ms-user-select: none;
           user-select: none;
+          background-color: black;
 }
 
 .Hero-section {
@@ -96,14 +97,6 @@ body {
   transform: translate(-6px);
 }
 
-#three-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  color: white;
-  z-index: 1;
-}
 
 .tagline {
   font-size: 48px;
@@ -321,6 +314,13 @@ button.herobutton.ab:hover{
   z-index: 9999;
 } */
 
+
+@media (max-width: 1200px) {
+  
+  .button-bar{
+    display: none;
+  }
+}
 
 @media  (max-width: 1000px){
  .tagline{
