@@ -144,8 +144,8 @@
 }
 
 .button1 {
-  width: 40px;
-  height: 40px;
+  width: 34px;
+  height: 34px;
   padding: 2px;
   background-color: transparent;
   color: white;
@@ -290,5 +290,3 @@
     font-family: downey-o-regular;
     src: url("../font/DowneyOutline-Regular.ttf");
 }
-
-
