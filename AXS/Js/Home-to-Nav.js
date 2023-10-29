@@ -372,6 +372,12 @@ function aboutGo() {
 
   team.classList.add("transform-origin-buttons");
   team.classList.remove("transform-up-buttons");
+
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
 }
 // ----------galaxy to service part--------------------
 function ServiceCome() {
@@ -448,52 +454,95 @@ function ServiceGo() {
 
 // about to vision part
 
-function visionCome() {
-  // aboutusSection.style.setProperty("transform", "translateX(-100%)");
-  // visionSection.style.setProperty("transform", "translateX(0)");
 
-  aboutusSection.style.setProperty("transform", "scale(0)");
-  aboutusSection.style.setProperty("opacity", "0");
-  visionSection.style.setProperty("transform", "scale(1)");
-  visionSection.style.setProperty("opacity", "1");
-  viewabout.style.setProperty("opacity", "0");
-  viewvision.style.setProperty("opacity", "1");
-  threecontainer.style.setProperty("transform", "scale(-10)");
-  threecontainer.style.setProperty("opacity", "0");
+let visioncontent= document.querySelector(".vision-content");
+let missioncontent= document.querySelector(".mission-content");
+let aboutcontent= document.querySelector(".about-content");
+let visionbutton= document.querySelector(".vision");
+let missionbutton= document.querySelector(".mission");
+let arrowbutton= document.querySelector(".arrow");
+
+
+function visioncome(){
+   
+
+    missioncontent.style.setProperty("transform", "translateY(-2000px)");
+   aboutcontent.style.setProperty("transform", "scale(0)");
+   visioncontent.style.setProperty("transform", "translateY(0)");
+   arrowbutton.style.setProperty("opacity", "1");
+  visionbutton.classList.add("onclickbutton");
+  missionbutton.classList.remove("onclickbutton");
+ 
+
 }
-function visionGo() {
-  // particles.style.setProperty("opacity", "0");
-  // particles.style.setProperty("transform", "translateY(100%)");
-  // aboutusSection.style.setProperty("transform", "translateX(100%)");
-  canvas.style.setProperty("opacity", "1");
-  // visionSection.style.setProperty("transform", "translateX(100%)");
-  visionSection.style.setProperty("transform", "scale(0)");
-  visionSection.style.setProperty("opacity", "0");
-  viewvision.style.setProperty("opacity", "0");
-  buttonbar.style.setProperty("opacity", "0");
-  buttonbar.style.setProperty("transform", "translateY(100%)");
-  // firefly.forEach((element) => {
-  //   element.style.setProperty("display", "block");
-  // });
+function missioncome(){
+   
 
-  homebutton.classList.add("transform-origin-buttons");
-  homebutton.classList.remove("transform-up-buttons");
+    missioncontent.style.setProperty("transform", "translateY(0)");
+   aboutcontent.style.setProperty("transform", "scale(0)");
+   visioncontent.style.setProperty("transform", "translateY(2000px)");
+   arrowbutton.style.setProperty("opacity", "1");
+   visionbutton.classList.remove("onclickbutton");
+  missionbutton.classList.add("onclickbutton");
 
-  abt.classList.add("transform-origin-buttons");
-  abt.classList.remove("transform-up-buttons");
-
-  client.classList.add("transform-origin-buttons");
-  client.classList.remove("transform-up-buttons");
-
-  service.classList.add("transform-origin-buttons");
-  service.classList.remove("transform-up-buttons");
-
-  contact.classList.add("transform-origin-buttons");
-  contact.classList.remove("transform-up-buttons");
-
-  team.classList.add("transform-origin-buttons");
-  team.classList.remove("transform-up-buttons");
 }
+
+function arrowclick(){
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+   aboutcontent.style.setProperty("transform", "scale(1)");
+   visioncontent.style.setProperty("transform", "translateY(2000px)");
+   arrowbutton.style.setProperty("opacity", "0");
+   visionbutton.classList.remove("onclickbutton");
+  missionbutton.classList.remove("onclickbutton");
+
+}
+
+// function visionCome() {
+//   // aboutusSection.style.setProperty("transform", "translateX(-100%)");
+//   // visionSection.style.setProperty("transform", "translateX(0)");
+
+//   aboutusSection.style.setProperty("transform", "scale(0)");
+//   aboutusSection.style.setProperty("opacity", "0");
+//   visionSection.style.setProperty("transform", "scale(1)");
+//   visionSection.style.setProperty("opacity", "1");
+//   viewabout.style.setProperty("opacity", "0");
+//   viewvision.style.setProperty("opacity", "1");
+//   threecontainer.style.setProperty("transform", "scale(-10)");
+//   threecontainer.style.setProperty("opacity", "0");
+// }
+// function visionGo() {
+//   // particles.style.setProperty("opacity", "0");
+//   // particles.style.setProperty("transform", "translateY(100%)");
+//   // aboutusSection.style.setProperty("transform", "translateX(100%)");
+//   canvas.style.setProperty("opacity", "1");
+//   // visionSection.style.setProperty("transform", "translateX(100%)");
+//   visionSection.style.setProperty("transform", "scale(0)");
+//   visionSection.style.setProperty("opacity", "0");
+//   viewvision.style.setProperty("opacity", "0");
+//   buttonbar.style.setProperty("opacity", "0");
+//   buttonbar.style.setProperty("transform", "translateY(100%)");
+//   // firefly.forEach((element) => {
+//   //   element.style.setProperty("display", "block");
+//   // });
+
+//   homebutton.classList.add("transform-origin-buttons");
+//   homebutton.classList.remove("transform-up-buttons");
+
+//   abt.classList.add("transform-origin-buttons");
+//   abt.classList.remove("transform-up-buttons");
+
+//   client.classList.add("transform-origin-buttons");
+//   client.classList.remove("transform-up-buttons");
+
+//   service.classList.add("transform-origin-buttons");
+//   service.classList.remove("transform-up-buttons");
+
+//   contact.classList.add("transform-origin-buttons");
+//   contact.classList.remove("transform-up-buttons");
+
+//   team.classList.add("transform-origin-buttons");
+//   team.classList.remove("transform-up-buttons");
+// }
 
 // Navbar to home
 function homeComeFromBar() {
