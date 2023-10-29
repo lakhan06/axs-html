@@ -315,6 +315,13 @@ button.herobutton.ab:hover{
 } */
 
 
+@media (max-width: 1200px) {
+  
+  .button-bar{
+    display: none;
+  }
+}
+
 @media  (max-width: 1000px){
  .tagline{
 

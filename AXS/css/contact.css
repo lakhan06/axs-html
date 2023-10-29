@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
     /* margin-top: 80px; */
-    width: 100%;
+    width:50vw;
     /* margin: 20px; */
 }
 
@@ -96,6 +96,7 @@
 
 .icon-div p{
     color: rgb(224, 224, 224);
+    font-size: 15px;
 }
 
 .form-above-heading{
@@ -112,18 +113,13 @@
     flex-direction: column;
     /* justify-content:center; */
     /* align-items: center; */
-    width: 80%;
+    width: 60vw;
     margin-top: 50px;
   }
   .name-email-div{
     display: flex;
     /* width: 90%; */
     gap: 2%;
-  }
-  @media(max-width:1120px){
-    .name-email-div{
-        flex-direction: column;
-    }
   }
   .contact-form input{
     z-index: 2;
@@ -139,15 +135,16 @@
     color: white !important;
   
     font-size: 100%;
- 
+    
     color: inherit;
     
-   
-   
+    
+    
   }
 
   ::placeholder{
     color: white;
+    font-size: 12px;
   }
   
   .message{
@@ -161,22 +158,22 @@
   }
   
 .btn{
-    font-size: 16px;
-    padding: 12px 35px;
-    font-weight: bold;
-    border-radius: 30px;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-    display: inline-block;
-    text-align: center;
-    margin: 10px;    
-    background: transparent;
+  font-size: 16px;
+  padding: 12px 35px;
+  font-weight: bold;
+  border-radius: 30px;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;    
+  background: transparent;
     border: 2px solid #8327C4;
     color:#8327C4;
     width: 200px;
     cursor: pointer;
     
-}
+  }
 
 .btn:hover{
       color: white;
@@ -209,7 +206,7 @@
     width: 160px;
     /* --tw-bg-opacity: 1; */
     background-color:#8327C4;
-
+    
   }
   .sc-title .line::after {
     position: absolute;
@@ -224,8 +221,8 @@
     border-top-color: transparent;
     --tw-content: '';
     content: var(--tw-content);
-}
-.inputDiv {
+  }
+  .inputDiv {
     width: 50%;
 }
 
@@ -242,8 +239,8 @@
     border-bottom-color: transparent;
     border-top-color: transparent;
     
-}
-.form-above-heading {
+  }
+  .form-above-heading {
     color:#8327C4;
     text-align: center;
     margin-top: 40px;
@@ -251,10 +248,70 @@
     font-weight: bold;
     text-transform: uppercase;
     width: 170px;
-}
+  }
 
 .sc-title h3 span {
   
     color:#8327C4;
 }
 
+
+  @media(max-width:700px){
+   
+    .contact-form{
+     
+      width: 80vw;
+    
+    }
+    
+.icon-part{
+  
+  width:30vw;
+  /* margin: 20px; */
+}
+.icon-div p{
+
+  font-size: 10px;
+}
+
+
+.sc-title{
+ 
+   font-size: 20px;
+
+  
+ }
+
+}
+
+  @media(max-width:300px){
+   
+    .contact-form{
+     
+      width: 70vw;
+    
+    }
+    
+.icon-part{
+  
+  width:20vw;
+  /* margin: 20px; */
+}
+.icon-div p{
+
+  font-size: 8px;
+}
+.icon-div i{
+
+  font-size: 12px;
+}
+
+
+.sc-title{
+ 
+   font-size: 12px;
+
+  
+ }
+
+}
