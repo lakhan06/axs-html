@@ -334,7 +334,7 @@ button.herobutton.ab:hover{
   .detail{
     font-size: 10px;
   }
-  .button-home {
+  /* .button-home {
    
     font-size: 10px;
     
@@ -367,7 +367,7 @@ button.herobutton.ab:hover{
     
     border: 1px solid #e500e5;
    
-  }
+  } */
   
  
  
@@ -400,12 +400,13 @@ button.herobutton.ab:hover{
   .detail{
     font-size: 7px;
   }
-  .button-home {
+  .button-headline {
    
-    font-size: 7px;
-    /* margin: 15px; */
+    font-size: 5px  
+    
     
   }
+  /* 
   .homebutton {
     width: 15px;
     height: 15px;
@@ -431,11 +432,11 @@ button.herobutton.ab:hover{
     width: 30px;
     height: 30px;
     padding: 2px;
-    /* padding:  0 2px; */
+    
     
     border: 1px solid #e500e5;
    
-  }
+  } */
   
   
   

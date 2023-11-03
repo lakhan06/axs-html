@@ -26,7 +26,7 @@ let clientMain = document.querySelector(".client-main");
 let teamSection = document.querySelector(".team-section");
 let ContactSection = document.querySelector(".Contact");
 let aboutusSection = document.querySelector(".about-us");
-let visionSection = document.querySelector(".canvas-wrapper");
+// let visionSection = document.querySelector(".canvas-wrapper");
 let ServiceSection = document.querySelector(".service-section");
 
 let aboutlink = document.querySelector(".about-link");
@@ -379,7 +379,7 @@ function aboutGo() {
  visionbutton.classList.remove("onclickbutton");
  missionbutton.classList.remove("onclickbutton");
  heading.innerHTML="AXS"
- heading.style.setProperty("margin", "20px");
+ heading.style.setProperty("margin-bottom", "20px");
 }
 // ----------galaxy to service part--------------------
 function ServiceCome() {
@@ -393,8 +393,7 @@ function ServiceCome() {
   // aboutusSection.style.setProperty("transform", "translateX(0)");
   ServiceSection.style.setProperty("transform", "scale(1)");
   ServiceSection.style.setProperty("opacity", "1");
- threecontainer.style.setProperty("transform", "scale(1)");
- threecontainer.style.setProperty("opacity", "1");
+
 
   // firefly.forEach((element) => {
   //   element.style.setProperty("display", "none");
@@ -476,7 +475,7 @@ function visioncome(){
   visionbutton.classList.add("onclickbutton");
   missionbutton.classList.remove("onclickbutton");
   heading.innerHTML="Vision"
-  heading.style.setProperty("margin", "0px");
+  heading.style.setProperty("margin-bottom", "0");
 
 }
 function missioncome(){
@@ -489,7 +488,7 @@ function missioncome(){
    visionbutton.classList.remove("onclickbutton");
   missionbutton.classList.add("onclickbutton");
   heading.innerHTML="Mission"
-  heading.style.setProperty("margin", "0px");
+  heading.style.setProperty("margin-bottom", "0");
 
 }
 
@@ -500,7 +499,7 @@ function arrowclick(){
    arrowbutton.style.setProperty("opacity", "0");
    visionbutton.classList.remove("onclickbutton");
   missionbutton.classList.remove("onclickbutton");
-  heading.style.setProperty("margin", "20px");
+  heading.style.setProperty("margin-bottom", "20px");
 
   heading.innerHTML="AXS"
 
@@ -578,8 +577,8 @@ function homeComeFromBar() {
   teamSection.style.setProperty("transform", "scale(0)");
   teamSection.style.setProperty("opacity", "0");
 
-  visionSection.style.setProperty("transform", "scale(0)");
-  visionSection.style.setProperty("opacity", "0");
+  // visionSection.style.setProperty("transform", "scale(0)");
+  // visionSection.style.setProperty("opacity", "0");
 
   ServiceSection.style.setProperty("transform", "scale(0)");
   ServiceSection.style.setProperty("opacity", "0");
@@ -598,6 +597,15 @@ function homeComeFromBar() {
 
   threecontainer.style.setProperty("transform", "scale(-10)");
   threecontainer.style.setProperty("opacity", "0");
+
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
+ heading.innerHTML="AXS"
+ heading.style.setProperty("margin-bottom", "20px");
+
 }
 function AboutComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -620,8 +628,8 @@ function AboutComeFromBar() {
   ServiceSection.style.setProperty("opacity", "0");
   viewservice.style.setProperty("opacity", "0");
 
-  visionSection.style.setProperty("transform", "scale(0)");
-  visionSection.style.setProperty("opacity", "0");
+  // visionSection.style.setProperty("transform", "scale(0)");
+  // visionSection.style.setProperty("opacity", "0");
   buttonbar.style.setProperty("opacity", "1");
   buttonbar.style.setProperty("transform", "translateY(0)");
   
@@ -634,6 +642,15 @@ function AboutComeFromBar() {
 
   threecontainer.style.setProperty("transform", "scale(1)");
   threecontainer.style.setProperty("opacity", "1");
+  
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
+ heading.innerHTML="AXS"
+ heading.style.setProperty("margin-bottom", "20px");
+
 }
 function clientComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -654,8 +671,8 @@ function clientComeFromBar() {
   teamSection.style.setProperty("transform", "scale(0)");
   teamSection.style.setProperty("opacity", "0");
 
-  visionSection.style.setProperty("transform", "scale(0)");
-  visionSection.style.setProperty("opacity", "0");
+  // visionSection.style.setProperty("transform", "scale(0)");
+  // visionSection.style.setProperty("opacity", "0");
 
   ServiceSection.style.setProperty("transform", "scale(0)");
   ServiceSection.style.setProperty("opacity", "0");
@@ -672,6 +689,14 @@ function clientComeFromBar() {
 
   threecontainer.style.setProperty("transform", "scale(-10)");
   threecontainer.style.setProperty("opacity", "0");
+
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
+ heading.innerHTML="AXS"
+ heading.style.setProperty("margin-bottom", "20px");
 }
 function teamComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -692,8 +717,8 @@ function teamComeFromBar() {
   teamSection.style.setProperty("transform", "scale(1)");
   teamSection.style.setProperty("opacity", "1");
 
-  visionSection.style.setProperty("transform", "scale(0)");
-  visionSection.style.setProperty("opacity", "0");
+  // visionSection.style.setProperty("transform", "scale(0)");
+  // visionSection.style.setProperty("opacity", "0");
 
   ServiceSection.style.setProperty("transform", "scale(0)");
   ServiceSection.style.setProperty("opacity", "0");
@@ -710,6 +735,14 @@ function teamComeFromBar() {
 
   threecontainer.style.setProperty("transform", "scale(-10)");
   threecontainer.style.setProperty("opacity", "0");
+
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
+ heading.innerHTML="AXS"
+ heading.style.setProperty("margin-bottom", "20px");
 }
 function contactComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -729,8 +762,8 @@ function contactComeFromBar() {
   teamSection.style.setProperty("transform", "scale(0)");
   teamSection.style.setProperty("opacity", "0");
 
-  visionSection.style.setProperty("transform", "scale(0)");
-  visionSection.style.setProperty("opacity", "0");
+  // visionSection.style.setProperty("transform", "scale(0)");
+  // visionSection.style.setProperty("opacity", "0");
 
   ServiceSection.style.setProperty("transform", "scale(0)");
   ServiceSection.style.setProperty("opacity", "0");
@@ -747,6 +780,14 @@ function contactComeFromBar() {
 
   threecontainer.style.setProperty("transform", "scale(-10)");
   threecontainer.style.setProperty("opacity", "0");
+
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
+ heading.innerHTML="AXS"
+ heading.style.setProperty("margin-bottom", "20px");
 }
 function ServiceComeFromBar() {
   // visionSection.style.setProperty("transform", "translateX(100%)");
@@ -780,4 +821,12 @@ function ServiceComeFromBar() {
 
   threecontainer.style.setProperty("transform", "scale(-10)");
   threecontainer.style.setProperty("opacity", "0");
+
+  missioncontent.style.setProperty("transform", "translateY(-2000px)");
+  aboutcontent.style.setProperty("transform", "scale(1)");
+  visioncontent.style.setProperty("transform", "translateY(2000px)");
+ visionbutton.classList.remove("onclickbutton");
+ missionbutton.classList.remove("onclickbutton");
+ heading.innerHTML="AXS"
+ heading.style.setProperty("margin-bottom", "20px");
 }
